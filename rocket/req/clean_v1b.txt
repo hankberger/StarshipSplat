@@ -1,0 +1,6 @@
+views1b/clean/depth_00.exr asset_947eba1627204013aca5b8e4632bc713
+views1b/clean/depth_01.exr asset_ddf52534557b42efaa59a34296b783bd
+views1b/clean/depth_02.exr asset_1a0b05ccaa4b410e8f3f3ed854bbe406
+views1b/clean/depth_03.exr asset_3031ab477dd943c69419071d203dfd3a
+views1b/clean/depth_04.exr asset_59cf312004854fb8b40a4351560b1881
+views1b/clean/depth_05.exr asset_a0f105fb86ba406789512c8710268c0b

@@ -1,0 +1,457 @@
+{
+ "contextFrames": [
+  {
+   "imageAsset": {
+    "assetId": "asset_5fd2f053a3514a7eabb7a0e40b3e8ee7"
+   },
+   "depth": {
+    "depthAsset": {
+     "assetId": "asset_e1d352fc07e1a4991191bb67df35de2c"
+    }
+   },
+   "camera": {
+    "extrinsics": {
+     "coordinateSystem": "rub",
+     "position": [
+      13.382774353027344,
+      8.495099067687988,
+      -8.231346130371094
+     ],
+     "quaternion": [
+      -0.006488219073659792,
+      0.8438107035000727,
+      0.01576515672017161,
+      0.5363700770042572
+     ]
+    },
+    "intrinsics": {
+     "cx": 640,
+     "cy": 360,
+     "fx": 1451.8763427734375,
+     "fy": 1451.8763427734375,
+     "height": 720,
+     "width": 1280
+    }
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_53ab84b3de8e4a3f8fb6f46fbc97ad56"
+   },
+   "depth": {
+    "depthAsset": {
+     "assetId": "asset_8534c4062d39e2e1c09e9750c23c2c7f"
+    }
+   },
+   "camera": {
+    "extrinsics": {
+     "coordinateSystem": "rub",
+     "position": [
+      12.941851615905762,
+      8.57849407196045,
+      -6.779042720794678
+     ],
+     "quaternion": [
+      -0.006484875881849102,
+      0.8235732216411731,
+      0.014111461678716448,
+      0.5669973206547506
+     ]
+    },
+    "intrinsics": {
+     "cx": 640,
+     "cy": 360,
+     "fx": 1463.9783935546875,
+     "fy": 1463.978271484375,
+     "height": 720,
+     "width": 1280
+    }
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_f91766ba180d4e62b31834a3c82e0e64"
+   },
+   "depth": {
+    "depthAsset": {
+     "assetId": "asset_1677c5cb0cc889237ebb0f806e371490"
+    }
+   },
+   "camera": {
+    "extrinsics": {
+     "coordinateSystem": "rub",
+     "position": [
+      13.039698600769043,
+      8.704017639160156,
+      -4.771946907043457
+     ],
+     "quaternion": [
+      -0.00668333555138061,
+      0.7990067517004357,
+      0.010539358155351094,
+      0.6011925362915772
+     ]
+    },
+    "intrinsics": {
+     "cx": 640,
+     "cy": 360,
+     "fx": 1465.0654296875,
+     "fy": 1465.0654296875,
+     "height": 720,
+     "width": 1280
+    }
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_5b86a3ed5950406bbc2da7fcc5891c45"
+   },
+   "depth": {
+    "depthAsset": {
+     "assetId": "asset_462f38c356c00f51353d8a685def4128"
+    }
+   },
+   "camera": {
+    "extrinsics": {
+     "coordinateSystem": "rub",
+     "position": [
+      13.287302017211914,
+      8.807330131530762,
+      -2.7073488235473633
+     ],
+     "quaternion": [
+      -0.006631833608154024,
+      0.7677939770314322,
+      0.007648314601928746,
+      0.6406168362609591
+     ]
+    },
+    "intrinsics": {
+     "cx": 640,
+     "cy": 360,
+     "fx": 1465.5869140625,
+     "fy": 1465.5869140625,
+     "height": 720,
+     "width": 1280
+    }
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_99465b413b0b478997d9f82b4a8bda27"
+   },
+   "depth": {
+    "depthAsset": {
+     "assetId": "asset_68aded082dcec5adb6f62715445aaa93"
+    }
+   },
+   "camera": {
+    "extrinsics": {
+     "coordinateSystem": "rub",
+     "position": [
+      13.323196411132812,
+      8.907225608825684,
+      -0.5537694692611694
+     ],
+     "quaternion": [
+      -0.006903886513847496,
+      0.7279109701004761,
+      0.00523637146944459,
+      0.6856169020467784
+     ]
+    },
+    "intrinsics": {
+     "cx": 640,
+     "cy": 360,
+     "fx": 1463.6309814453125,
+     "fy": 1463.631103515625,
+     "height": 720,
+     "width": 1280
+    }
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_e87d749637f947e99d235770b30db8e5"
+   },
+   "depth": {
+    "depthAsset": {
+     "assetId": "asset_7e16ba342b5f23e90d037a6bfdf08e38"
+    }
+   },
+   "camera": {
+    "extrinsics": {
+     "coordinateSystem": "rub",
+     "position": [
+      13.143572807312012,
+      9.007590293884277,
+      1.6876338720321655
+     ],
+     "quaternion": [
+      -0.00750166578186842,
+      0.6865026164816599,
+      0.0029335505949292353,
+      0.727082716652816
+     ]
+    },
+    "intrinsics": {
+     "cx": 640,
+     "cy": 360,
+     "fx": 1461.36572265625,
+     "fy": 1461.36572265625,
+     "height": 720,
+     "width": 1280
+    }
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_c5a38b868e3d4fb3ac20181f092b762d"
+   },
+   "depth": {
+    "depthAsset": {
+     "assetId": "asset_49fc0c7ca686fc986398a35d336d37b0"
+    }
+   },
+   "camera": {
+    "extrinsics": {
+     "coordinateSystem": "rub",
+     "position": [
+      12.73779296875,
+      9.099105834960938,
+      3.836500406265259
+     ],
+     "quaternion": [
+      -0.008228935644407442,
+      0.6463883468017159,
+      0.0010132376453073617,
+      0.7629635398147012
+     ]
+    },
+    "intrinsics": {
+     "cx": 640,
+     "cy": 360,
+     "fx": 1457.2431640625,
+     "fy": 1457.2431640625,
+     "height": 720,
+     "width": 1280
+    }
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_c498979d5fc749478f1288770f718432"
+   },
+   "depth": {
+    "depthAsset": {
+     "assetId": "asset_b91059fdde7fc5b54bba62c1a41586c1"
+    }
+   },
+   "camera": {
+    "extrinsics": {
+     "coordinateSystem": "rub",
+     "position": [
+      12.26447868347168,
+      9.192044258117676,
+      5.934023857116699
+     ],
+     "quaternion": [
+      -0.00924450671086545,
+      0.6080797770762997,
+      -0.0008501579147425751,
+      0.7938216430899515
+     ]
+    },
+    "intrinsics": {
+     "cx": 640,
+     "cy": 360,
+     "fx": 1459.06396484375,
+     "fy": 1459.064208984375,
+     "height": 720,
+     "width": 1280
+    }
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_fe9984f5ba414b5ba979355c924449b4"
+   },
+   "depth": {
+    "depthAsset": {
+     "assetId": "asset_f6670d47395fc512745dea4734fac8ca"
+    }
+   },
+   "camera": {
+    "extrinsics": {
+     "coordinateSystem": "rub",
+     "position": [
+      11.76968002319336,
+      9.262393951416016,
+      7.3473992347717285
+     ],
+     "quaternion": [
+      -0.010097915214206568,
+      0.576822129186423,
+      -0.001807613755883309,
+      0.8168053598757038
+     ]
+    },
+    "intrinsics": {
+     "cx": 640,
+     "cy": 360,
+     "fx": 1462.2381591796875,
+     "fy": 1462.2381591796875,
+     "height": 720,
+     "width": 1280
+    }
+   }
+  }
+ ],
+ "targetCameras": [
+  {
+   "extrinsics": {
+    "position": [
+     3.8146954743248713,
+     9.0,
+     -16.017478060749074
+    ],
+    "quaternion": [
+     0.0,
+     0.9702957262759965,
+     0.0,
+     0.24192189559966776
+    ],
+    "coordinateSystem": "rub"
+   },
+   "intrinsics": {
+    "width": 1280,
+    "height": 720,
+    "fx": 1461.0,
+    "fy": 1461.0,
+    "cx": 640,
+    "cy": 360
+   }
+  },
+  {
+   "extrinsics": {
+    "position": [
+     -7.716452196400374,
+     9.0,
+     -18.15464995700578
+    ],
+    "quaternion": [
+     0.0,
+     0.998134798421867,
+     0.0,
+     -0.06104853953485682
+    ],
+    "coordinateSystem": "rub"
+   },
+   "intrinsics": {
+    "width": 1280,
+    "height": 720,
+    "fx": 1461.0,
+    "fy": 1461.0,
+    "cx": 640,
+    "cy": 360
+   }
+  },
+  {
+   "extrinsics": {
+    "position": [
+     5.844740508845398,
+     9.0,
+     17.173464863635342
+    ],
+    "quaternion": [
+     0.0,
+     0.3007057995042731,
+     0.0,
+     0.9537169507482269
+    ],
+    "coordinateSystem": "rub"
+   },
+   "intrinsics": {
+    "width": 1280,
+    "height": 720,
+    "fx": 1461.0,
+    "fy": 1461.0,
+    "cx": 640,
+    "cy": 360
+   }
+  },
+  {
+   "extrinsics": {
+    "position": [
+     -5.339999999999999,
+     9.0,
+     20.7
+    ],
+    "quaternion": [
+     0.0,
+     2.2773805633336544e-17,
+     0.0,
+     1.0
+    ],
+    "coordinateSystem": "rub"
+   },
+   "intrinsics": {
+    "width": 1280,
+    "height": 720,
+    "fx": 1461.0,
+    "fy": 1461.0,
+    "cx": 640,
+    "cy": 360
+   }
+  },
+  {
+   "extrinsics": {
+    "position": [
+     24.66,
+     16.0,
+     -1.8
+    ],
+    "quaternion": [
+     -0.1069898023178948,
+     0.7319667502363203,
+     0.1182224008341049,
+     0.6624208048434759
+    ],
+    "coordinateSystem": "rub"
+   },
+   "intrinsics": {
+    "width": 1280,
+    "height": 720,
+    "fx": 1461.0,
+    "fy": 1461.0,
+    "cx": 640,
+    "cy": 360
+   }
+  },
+  {
+   "extrinsics": {
+    "position": [
+     7.66,
+     3.5,
+     3.2
+    ],
+    "quaternion": [
+     0.12452909330864924,
+     0.6423063947939216,
+     -0.10683586981844793,
+     0.7486795690057906
+    ],
+    "coordinateSystem": "rub"
+   },
+   "intrinsics": {
+    "width": 1280,
+    "height": 720,
+    "fx": 1461.0,
+    "fy": 1461.0,
+    "cx": 640,
+    "cy": 360
+   }
+  }
+ ],
+ "returnDepth": true
+}

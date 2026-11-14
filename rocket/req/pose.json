@@ -1,0 +1,174 @@
+{
+ "frames": [
+  {
+   "imageAsset": {
+    "assetId": "asset_5fd2f053a3514a7eabb7a0e40b3e8ee7"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_c854cac5cdf84e4b80114bd0dd673c95"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_903499f7a82949eab2c395debe7582d0"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_8a7e3e6b4cc24a15980557dae1420719"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_53ab84b3de8e4a3f8fb6f46fbc97ad56"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_a6aa25a66d50403d8e7b8c7ab33307a6"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_d5d31f5f84d243759fe3c4bb1bd18e7e"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_347131e362ba41ed892191b7033ea188"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_f91766ba180d4e62b31834a3c82e0e64"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_4db570ebc4b74d89bb3c4968770c45a8"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_9a343dea148b4b51be5548402f477e41"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_e9ceb424b788436083597cadee8d4b91"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_5b86a3ed5950406bbc2da7fcc5891c45"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_c1ecd396afe34f90bb6449c3ef982927"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_e7055e546d69493b9f371290420add65"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_97a0bfd7a80e49d3b88150538f36a5a6"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_99465b413b0b478997d9f82b4a8bda27"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_54ba4b9107524675bc7e614ed2439779"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_283f2f2a2d2749e7aa9b3b68624597d9"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_b5ecec5c15304620ab6a1f0bf9485d82"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_e87d749637f947e99d235770b30db8e5"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_9d35547ad19a40cba59e3ebca3df1962"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_535ffa8c3c594a62968386caaf62a501"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_0b8fc9ea1f524065a549764eee174fde"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_c5a38b868e3d4fb3ac20181f092b762d"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_db492a21bd6f4ebb977b7f630d38a605"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_010c06cbab1e48809b47ab58b2122610"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_a3ebd97ae0ab408fb5bbddb154165b8b"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_c498979d5fc749478f1288770f718432"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_1d77cb43004b414496a8170279927c7c"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_c9e2abcc147847b7b13915402d2a4bc1"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_7db369ead03e446dbc355dfb971d9dfd"
+   }
+  },
+  {
+   "imageAsset": {
+    "assetId": "asset_fe9984f5ba414b5ba979355c924449b4"
+   }
+  }
+ ],
+ "targetResolution": [
+  1280,
+  720
+ ],
+ "refinePoses": true
+}

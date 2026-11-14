@@ -1,0 +1,68 @@
+{
+  "id": "6e808a3634064c0e89633cc2b69812be",
+  "ownerId": "acct_8b3b4aa40ac04a2ab9e9dec9386fdbd4",
+  "metadata": {
+    "@type": "type.worldlabs.ai/wlt.marble.v2.images2PosedRGBD.metadata",
+    "state": "SUCCEEDED",
+    "status": "SUCCEEDED",
+    "surface": "DEVELOPER_API",
+    "task": "images2PosedRGBD",
+    "taskVersion": "v1"
+  },
+  "done": true,
+  "error": null,
+  "expiresAtSecs": null,
+  "createdAtSecs": 1794694858,
+  "response": {
+    "frames": [
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              0,
+              4.035522937774658,
+              0
+            ],
+            "quaternion": [
+              0.012254577762588205,
+              0.00008441646391861674,
+              -0.006887884866359407,
+              0.9999011827374689
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360.5,
+            "fx": 893.3741455078125,
+            "fy": 893.8981323242188,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -1.9930907487869263,
+          0,
+          -36.35035705566406
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_fc1f23a377bafe9b3be25d799cd6d8b1",
+            "path": "frames_0_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_99754227e90b6d5103f31139e735c523",
+            "path": "frames_0_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_bf39019bf42b454e6383595bc4fb8d07",
+          "path": "frames_0_image.jpg"
+        },
+        "maskAsset": null
+      }
+    ],
+    "poseRefinementAccepted": null
+  },
+  "name": "accounts/acct_8b3b4aa40ac04a2ab9e9dec9386fdbd4/projects/proj_8e2175b1bcd24ba7a983a10b380a3bc9/operations/6e808a3634064c0e89633cc2b69812be"
+}

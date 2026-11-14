@@ -1,0 +1,17 @@
+# Blender scene (over GitHub's 100 MB per-file limit) and backups
+rocket/rocket_scene.blend
+*.blend1
+
+# Scratch contact sheets
+rocket/probe/
+
+# Temp scripts and caches
+rocket/tools/_*.py
+__pycache__/
+
+# Raw API responses / signed download URLs
+run-output.json
+rocket/req/*_op.json
+rocket/req/pose_done.json
+rocket/req/*.err
+rocket/req/path_cams_raw.json

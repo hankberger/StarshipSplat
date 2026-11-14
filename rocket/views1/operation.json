@@ -1,0 +1,269 @@
+{
+  "id": "755aa3cc092f4fbd88d472025ed4e5aa",
+  "ownerId": "acct_8b3b4aa40ac04a2ab9e9dec9386fdbd4",
+  "metadata": {
+    "@type": "type.worldlabs.ai/wlt.marble.v2.atlasGenerate.metadata",
+    "state": "SUCCEEDED",
+    "status": "SUCCEEDED",
+    "surface": "DEVELOPER_API",
+    "task": "atlasGenerate",
+    "taskVersion": "v1"
+  },
+  "done": true,
+  "error": null,
+  "expiresAtSecs": null,
+  "createdAtSecs": 1794697125,
+  "response": {
+    "frames": [
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              3.8146954743248713,
+              9,
+              -16.017478060749074
+            ],
+            "quaternion": [
+              0,
+              0.9702957262759965,
+              0,
+              0.24192189559966776
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 1461,
+            "fy": 1461,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_5d5a112e5de1d0c43397f1c2f43ccb86",
+            "path": "frames_0_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_c9ede4a4f88fd927b84652f2fda5fe4a",
+            "path": "frames_0_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_3f913ac06647b079012f09b468fef13d",
+          "path": "frames_0_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -7.716452196400374,
+              9,
+              -18.15464995700578
+            ],
+            "quaternion": [
+              0,
+              0.998134798421867,
+              0,
+              -0.06104853953485682
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 1461,
+            "fy": 1461,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_5c262c90abfff39030d3f003b9bfd3f5",
+            "path": "frames_1_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_5977b8fc856a1e4cc2e36bf91da6fa93",
+            "path": "frames_1_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_9e92629e6528e71b0b65eaeb3f760aba",
+          "path": "frames_1_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              5.844740508845398,
+              9,
+              17.173464863635342
+            ],
+            "quaternion": [
+              0,
+              0.3007057995042731,
+              0,
+              0.9537169507482269
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 1461,
+            "fy": 1461,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_676a65fcc5d010c10246ff6b54470564",
+            "path": "frames_2_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_121474edf39cb741f4d7378d8faf0ecc",
+            "path": "frames_2_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_becb8ffbc69584f9141e0412d9e37a32",
+          "path": "frames_2_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -5.339999999999999,
+              9,
+              20.7
+            ],
+            "quaternion": [
+              0,
+              2.2773805633336544e-17,
+              0,
+              1
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 1461,
+            "fy": 1461,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_9b1ef280d472980524b48acad260d85b",
+            "path": "frames_3_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_8b302418e34dd611cce257de17551c13",
+            "path": "frames_3_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_e0f1312267eade776697c516f051af2b",
+          "path": "frames_3_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              24.66,
+              16,
+              -1.8
+            ],
+            "quaternion": [
+              -0.1069898023178948,
+              0.7319667502363203,
+              0.1182224008341049,
+              0.6624208048434759
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 1461,
+            "fy": 1461,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_ad1d166e686d964ec52578daae0f0d88",
+            "path": "frames_4_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_b45c65455a61b30291cbbc3a19d94d28",
+            "path": "frames_4_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_8e34519246308366ab604e7c12bad044",
+          "path": "frames_4_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              7.66,
+              3.5,
+              3.2
+            ],
+            "quaternion": [
+              0.12452909330864924,
+              0.6423063947939216,
+              -0.10683586981844793,
+              0.7486795690057906
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 1461,
+            "fy": 1461,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_811c545f674643aee3a5e597a01b0f57",
+            "path": "frames_5_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_fcf7bc3dcfada2f7324af923053fe322",
+            "path": "frames_5_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_cd4a7d828ebf4426d3a90ba2fc5a2711",
+          "path": "frames_5_image.jpg"
+        },
+        "maskAsset": null
+      }
+    ],
+    "promptUsed": "{\"tags\":[\"aerospace engineering\",\"launch tower\",\"coastal environment\",\"spacecraft\",\"overcast sky\"],\"short_caption\":\"A tall metal launch tower holds a dark, metallic spacecraft upright near a coastal launch site under a cloudy sky.\",\"long_caption\":\"A tall, industrial metal launch tower stands prominently against a coastal backdrop, holding a dark, cylindrical spacecraft with a pointed nose. The scene is captured under a thick, overcast sky that creates a diffused and low-contrast environment. Vapor or steam periodically vents from the base of the spacecraft, trailing away towards the coastal wetlands. The tower features a complex lattice structure with various mechanical arms and platforms, some of which are attached to the craft. The surrounding landscape consists of low-lying marshes, inlets of water, and a sandy beach leading to the ocean. In the distance, a small skyline is visible at the edge of the shore. The overall atmosphere is industrial and quiet, suggesting pre-launch preparations at a modern space facility.\",\"style_and_atmosphere\":\"The scene is a series of realistic documentary-style photographic stills. The atmosphere is quiet, industrial, and expectant, characterized by the muted colors of the overcast weather.\",\"lighting\":\"The lighting is flat and diffused, originating from a heavily overcast sky. This results in soft shadows and a lack of strong highlights on the metallic surfaces of the tower and spacecraft.\",\"key_subjects_and_objects\":\"The central subject is a tall, dark metallic spacecraft with a smooth, reflective surface and a conical nose. It is held vertically by a massive steel launch tower, which is a complex lattice of silver-grey girders and functional platforms. The tower has mechanical arms extending from its structure to grasp and support the spacecraft. At the base of the visible portion of the spacecraft, a white plume of vapor or steam occasionally vents out. Other objects include several white storage tanks and industrial buildings at the base of the tower complex. The spacecraft itself appears matte black or deep charcoal, contrasting with the lighter grey of the surrounding metalwork.\",\"environment_and_layout\":\"The environment is a coastal launch facility situated between inland wetlands and the open ocean. A sandy beach strip separates the green and brown marshy land from the sea. The layout is dominated by the verticality of the launch tower, which rises from a developed industrial pad featuring warehouses, piping, and cylindrical tanks. The sea beyond the beach is a deep grey-blue with subtle white waves at the shoreline. A distant city or settlement is visible along the coast at the far edge of the horizon.\",\"visible_progression\":\"A plume of white vapor or steam is initially seen venting from the base of the spacecraft. As the scene progresses, this plume stretches out horizontally across the landscape, carried by the wind. Eventually, the venting ceases, and the vapor dissipates into the air, leaving the spacecraft and tower in a static state. There is no other visible movement of the main subjects during this sequence.\",\"text_and_ocr\":{\"verbatim_strings\":[],\"notes\":\"none\"},\"artifacts_and_overlays\":\"none\"}",
+    "requestId": "0bec0b6b-f909-45f3-aaf5-01032f0bfc54"
+  },
+  "name": "accounts/acct_8b3b4aa40ac04a2ab9e9dec9386fdbd4/projects/proj_8e2175b1bcd24ba7a983a10b380a3bc9/operations/755aa3cc092f4fbd88d472025ed4e5aa"
+}
