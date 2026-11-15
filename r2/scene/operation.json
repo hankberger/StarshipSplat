@@ -1,0 +1,6554 @@
+{
+  "id": "3a1dd7093c5e44a7a46265ee65f1f6da",
+  "ownerId": "acct_8b3b4aa40ac04a2ab9e9dec9386fdbd4",
+  "metadata": {
+    "@type": "type.worldlabs.ai/wlt.marble.v2.images2PosedRGBD.metadata",
+    "state": "SUCCEEDED",
+    "status": "SUCCEEDED",
+    "surface": "DEVELOPER_API",
+    "task": "images2PosedRGBD",
+    "taskVersion": "v1"
+  },
+  "done": true,
+  "error": null,
+  "expiresAtSecs": null,
+  "createdAtSecs": 1794703667,
+  "response": {
+    "frames": [
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              22.1562442779541,
+              11.779956817626953,
+              18.53751564025879
+            ],
+            "quaternion": [
+              0.009696852107179979,
+              0.4239037418209494,
+              0.0016911704559651574,
+              0.9056537576093295
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 941.5023803710938,
+            "fy": 941.5023193359375,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -60.65257263183594,
+          0,
+          -52.83937072753906
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_64ad6aeb4c7ce5d418e06e1ea9e78009",
+            "path": "frames_000_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_f9b36dbf588b743ab4fe8d2819902959",
+            "path": "frames_000_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_cd4f47c949a748a39da05aaaddbb54f6",
+          "path": "frames_000_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              21.1527156829834,
+              11.805340766906738,
+              19.528837203979492
+            ],
+            "quaternion": [
+              0.009713675064754934,
+              0.4043450418614178,
+              0.0012880917248619382,
+              0.9145540292724826
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.718994140625,
+            "fy": 940.718994140625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -50.695709228515625,
+          0,
+          -45.473968505859375
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_7376725764fd16d1dd85866b8ac17476",
+            "path": "frames_001_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_4151b608afdaa28c473a8d3cd6c583cb",
+            "path": "frames_001_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_7ed6721b3a8b47e88084b4638b05caad",
+          "path": "frames_001_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              20.33041763305664,
+              11.824402809143066,
+              20.1915340423584
+            ],
+            "quaternion": [
+              0.009751640673802076,
+              0.38818097388544187,
+              0.0009126842210758541,
+              0.9215311194013102
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 938.7978515625,
+            "fy": 938.7979125976562,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -43.2503776550293,
+          0,
+          -42.341957092285156
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_e72e086754c65c9d5caa859980a8b0f2",
+            "path": "frames_002_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_fae2a5571003e2bcd1c5d458f553a514",
+            "path": "frames_002_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_6e7190054e5f4738a3ec9b636d9c276f",
+          "path": "frames_002_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.582557678222656,
+              11.848403930664062,
+              20.872352600097656
+            ],
+            "quaternion": [
+              0.009680968705664093,
+              0.37192635072004887,
+              0.0007306286712598043,
+              0.9282114708765088
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.582275390625,
+            "fy": 939.582275390625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -37.31524658203125,
+          0,
+          -39.27220916748047
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_bf44a7c35b905e623641ae7d8d1388a6",
+            "path": "frames_003_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_08ecca8c0e7d7d984c119bf01afff707",
+            "path": "frames_003_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_861823501e624377be09075082e5e841",
+          "path": "frames_003_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              18.7624454498291,
+              11.876630783081055,
+              21.54025650024414
+            ],
+            "quaternion": [
+              0.009560271176743237,
+              0.35461717887885297,
+              0.0005237309341038745,
+              0.9349625571994524
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.6148681640625,
+            "fy": 939.6149291992188,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -32.744728088378906,
+          0,
+          -37.799781799316406
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_e3f9f5325e45ae492e649c87a1fe7b02",
+            "path": "frames_004_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_7a46629c56c0c7601acd5ad4a0528de3",
+            "path": "frames_004_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_f19d260a1d9345daa8c9fd5bb28a8533",
+          "path": "frames_004_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              17.981304168701172,
+              11.905509948730469,
+              22.17017936706543
+            ],
+            "quaternion": [
+              0.009359722737133851,
+              0.3378686943299306,
+              0.00038565684280266404,
+              0.9411466369545562
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.5625,
+            "fy": 940.5625610351562,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -28.17871856689453,
+          0,
+          -36.53855895996094
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_c429d3d5c9c9a3517274427eef2af13d",
+            "path": "frames_005_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_c78ddc8e314cb4ca14ac36fc9dc4c43d",
+            "path": "frames_005_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_466cdef4659a4feb9888d5b50a2214c4",
+          "path": "frames_005_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              16.83949089050293,
+              11.936599731445312,
+              22.925233840942383
+            ],
+            "quaternion": [
+              0.009090858069667553,
+              0.3141346163549083,
+              0.00008469644557618041,
+              0.9493349208438632
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.48876953125,
+            "fy": 940.48876953125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -23.659353256225586,
+          0,
+          -36.91387939453125
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_67b9c09ce4f7d8af54f0581c74341a73",
+            "path": "frames_006_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_5898170552f2a4405950a53f36dcd288",
+            "path": "frames_006_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_7e56001c110b435785b5fc4df95bab83",
+          "path": "frames_006_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              15.950920104980469,
+              11.961912155151367,
+              23.421236038208008
+            ],
+            "quaternion": [
+              0.008934534206343055,
+              0.2952275437316308,
+              -0.0001798868390108582,
+              0.9553851784287994
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.713134765625,
+            "fy": 939.7130737304688,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -22.132648468017578,
+          0,
+          -39.45794677734375
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_de253ff7382d523ae23abf50777e91a7",
+            "path": "frames_007_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_c0f62ada2224af31ece8dfc23abd31d0",
+            "path": "frames_007_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_d1896b8e3079430b9b6b572aefd25c2d",
+          "path": "frames_007_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              15.118569374084473,
+              11.984477043151855,
+              23.884775161743164
+            ],
+            "quaternion": [
+              0.008886345244349647,
+              0.27692430606264073,
+              -0.0004607001257383699,
+              0.9608505343368016
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.0036010742188,
+            "fy": 940.0035400390625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -25.000640869140625,
+          0,
+          -42.442787170410156
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_a5d72822072c8a8af3f00c82dcb1e1e0",
+            "path": "frames_008_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_8e2a679a989ccee9b4457e567177f661",
+            "path": "frames_008_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_5cd962a1cdb74ed89e6274970473c845",
+          "path": "frames_008_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              14.21915340423584,
+              12.003399848937988,
+              24.242830276489258
+            ],
+            "quaternion": [
+              0.008889471914806506,
+              0.2594842822290238,
+              -0.0008117879140524192,
+              0.9657060761771911
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 938.888916015625,
+            "fy": 938.8890380859375,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -21.751686096191406,
+          0,
+          -41.94020080566406
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_fcf2384964227d11be4a768453ed8323",
+            "path": "frames_009_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_de9e472f95249994785e06bf1426be6a",
+            "path": "frames_009_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_f17306d47d454a04a12b6bfbcfe356bc",
+          "path": "frames_009_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              7.098289489746094,
+              12.485980987548828,
+              19.031875610351562
+            ],
+            "quaternion": [
+              0.015809576105369105,
+              0.14306501044399783,
+              -0.002879591452482408,
+              0.9895828252567311
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 945.0862426757812,
+            "fy": 945.0861206054688,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -11.065662384033203,
+          0,
+          -48.454673767089844
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_5bfaf0ca8834e7b39a923721df4f25d6",
+            "path": "frames_010_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_55087c39c0a4163497dd10e14d6fbb3a",
+            "path": "frames_010_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_cb92483e9e3a4987a80b8125a7acb103",
+          "path": "frames_010_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              7.523990154266357,
+              12.455045700073242,
+              18.40326690673828
+            ],
+            "quaternion": [
+              0.016907979845297787,
+              0.1497590965642884,
+              -0.0028090984883152436,
+              0.9885739437085533
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 947.933349609375,
+            "fy": 947.9334106445312,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -11.354715347290039,
+          0,
+          -44.42142868041992
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_f3bd09654cf33a27696fb8df98f1930e",
+            "path": "frames_011_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_41c43bc9ff8c60aa22f0596bf6f97bbe",
+            "path": "frames_011_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_afbdee234a8540eaa1ac9191f440d072",
+          "path": "frames_011_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              8.026774406433105,
+              12.426289558410645,
+              17.74069595336914
+            ],
+            "quaternion": [
+              0.020745525846384068,
+              0.16312815208017853,
+              -0.0031902323595474143,
+              0.9863815953137788
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 947.5439453125,
+            "fy": 947.5438232421875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -13.059300422668457,
+          0,
+          -39.16789627075195
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_47523b143c05700a26e03595c81bbaa0",
+            "path": "frames_012_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_6cc1b50a193fe8c5505cce41f620fafe",
+            "path": "frames_012_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_b610afd78c544472b0e8bed0b4e0ed0d",
+          "path": "frames_012_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              8.603995323181152,
+              12.381821632385254,
+              17.206661224365234
+            ],
+            "quaternion": [
+              0.0214482247559237,
+              0.1877039079844572,
+              -0.003118469623803581,
+              0.9819865028244468
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 947.976318359375,
+            "fy": 947.9761962890625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -13.980414390563965,
+          0,
+          -36.39641189575195
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_32888522182e862b26d74f15e508174f",
+            "path": "frames_013_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_1138b332e5074e849c9ab73343f263ee",
+            "path": "frames_013_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_afd3c64573124c86a0035cd4df3d7715",
+          "path": "frames_013_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              9.610705375671387,
+              12.323648452758789,
+              16.47903823852539
+            ],
+            "quaternion": [
+              0.02393943566863866,
+              0.22783994858798065,
+              -0.003641332390363489,
+              0.9733974532254109
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 948.0009765625,
+            "fy": 948.0010375976562,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -16.505157470703125,
+          0,
+          -35.42634582519531
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_cddf3b7daf2e1c239497bc586bdb79c2",
+            "path": "frames_014_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_bb41203184f34057390f0672cbee5c60",
+            "path": "frames_014_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_756045a145f94b5cb9c3f6688a7a7245",
+          "path": "frames_014_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              10.060669898986816,
+              12.3201904296875,
+              16.246164321899414
+            ],
+            "quaternion": [
+              0.02584515730801487,
+              0.24126224615366482,
+              -0.004202689082899755,
+              0.9701066404417017
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 949.5269775390625,
+            "fy": 949.5269775390625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -17.445556640625,
+          0,
+          -33.939781188964844
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_4ce586b21315c49fbc4e983c8ae18c4d",
+            "path": "frames_015_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_4b1a66f8236b4146a4211da374f2c78a",
+            "path": "frames_015_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_64798d57891540a49004c3a46bbb4c08",
+          "path": "frames_015_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              10.849297523498535,
+              12.303302764892578,
+              15.746063232421875
+            ],
+            "quaternion": [
+              0.02991448613940608,
+              0.26725882267332174,
+              -0.004916536765215713,
+              0.9631477938969293
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 949.9835815429688,
+            "fy": 949.9835205078125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -18.407180786132812,
+          0,
+          -40.60306167602539
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_1862f1198ec63e929301f9f99e6f0daa",
+            "path": "frames_016_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_8ef8844b3b7271e226b2be63a98eb56e",
+            "path": "frames_016_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_8a74f5c154e3469c9ed8a59c7eaa8d8c",
+          "path": "frames_016_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              11.666973114013672,
+              12.289355278015137,
+              15.241551399230957
+            ],
+            "quaternion": [
+              0.03389654851035813,
+              0.292190275654171,
+              -0.005702572769731271,
+              0.9557423018136376
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 950.6386108398438,
+            "fy": 950.6385498046875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -19.334375381469727,
+          0,
+          -39.058345794677734
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_5169fb4388979542d6289534ba36a699",
+            "path": "frames_017_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_f94721d7f8d0c85597df063c42087044",
+            "path": "frames_017_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_d11bfddedbb94da79014be8f79154eb5",
+          "path": "frames_017_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              12.789541244506836,
+              12.247417449951172,
+              14.383641242980957
+            ],
+            "quaternion": [
+              0.03835794332138491,
+              0.3245121593489521,
+              -0.007201113414104216,
+              0.9450760131250983
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 948.5675048828125,
+            "fy": 948.5675659179688,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -21.458818435668945,
+          0,
+          -35.482261657714844
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_55ef0fd75d62674389b33e14965f5bff",
+            "path": "frames_018_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_e37f626cfbd1e501ba45e48718739284",
+            "path": "frames_018_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_e5bdb7bf44e8468481c6b6c2f12d245c",
+          "path": "frames_018_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              13.159353256225586,
+              12.219766616821289,
+              14.094329833984375
+            ],
+            "quaternion": [
+              0.03939408000950176,
+              0.33599425612713385,
+              -0.007706967514170796,
+              0.9410082725255472
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 948.065185546875,
+            "fy": 948.065185546875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -23.57682228088379,
+          0,
+          -36.82197952270508
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_a01e179a00f738288af6f0dde903b860",
+            "path": "frames_019_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_7a2d86a91dc1c23c0eac705e6f5c91f3",
+            "path": "frames_019_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_887a9d668c314b4087f72bba97b6228c",
+          "path": "frames_019_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              13.959678649902344,
+              12.16238784790039,
+              13.596878051757812
+            ],
+            "quaternion": [
+              0.041069924177933585,
+              0.3618204960089987,
+              -0.009009799002667922,
+              0.9312990999231947
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 950.3515014648438,
+            "fy": 950.3513793945312,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -21.487651824951172,
+          0,
+          -30.047374725341797
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_8df524341f5090bdbc7ec5635985caa7",
+            "path": "frames_020_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_de31a28585c1b76b0e4547a2d5074030",
+            "path": "frames_020_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_ea428986db3643508d137f172e9c2596",
+          "path": "frames_020_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              15.420259475708008,
+              12.024809837341309,
+              11.954610824584961
+            ],
+            "quaternion": [
+              0.04579096034496629,
+              0.4246893157453881,
+              -0.013284816614062276,
+              0.9040827875199984
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 945.0768432617188,
+            "fy": 945.0769653320312,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -19.60524559020996,
+          0,
+          -19.50687026977539
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_cd70dd8f41616433970241801e9875d9",
+            "path": "frames_021_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_c83daf9f52da00f554e5901b04fbaeba",
+            "path": "frames_021_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_3981af5741c84822b4bd9b5aece0b65b",
+          "path": "frames_021_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              15.467257499694824,
+              12.02968692779541,
+              11.995162010192871
+            ],
+            "quaternion": [
+              0.04560297461552359,
+              0.4246967485323056,
+              -0.013192511254460923,
+              0.9040901493430312
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 947.1051025390625,
+            "fy": 947.1051025390625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -19.552032470703125,
+          0,
+          -18.514545440673828
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_b8c89998673b61cec1bf084aa699d392",
+            "path": "frames_022_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_6ce130d183d64d9bed18dd67a2f0d42e",
+            "path": "frames_022_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_4852d2650d9f4ab68c278fb2e7cba072",
+          "path": "frames_022_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              15.813631057739258,
+              12.009134292602539,
+              11.728998184204102
+            ],
+            "quaternion": [
+              0.04609614006053747,
+              0.43628514540404306,
+              -0.014084819481247427,
+              0.8985165750454873
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 949.7669067382812,
+            "fy": 949.7670288085938,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -23.190771102905273,
+          0,
+          -22.305212020874023
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_074b30e690738efd141bfc7730814aa4",
+            "path": "frames_023_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_0fae4530b0bc8058807b51c42dbd32be",
+            "path": "frames_023_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_98a5a7a35ace4fc78c1c710559695a4c",
+          "path": "frames_023_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              16.5732479095459,
+              11.942865371704102,
+              10.696505546569824
+            ],
+            "quaternion": [
+              0.04862142220086673,
+              0.4691109670647159,
+              -0.01704484672350215,
+              0.8816350328128666
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 946.9189453125,
+            "fy": 946.9189453125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -35.85966491699219,
+          0,
+          -31.515308380126953
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_21630a704337657ce8e80d518e166f1e",
+            "path": "frames_024_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_e9f46ca05ac7dd5cf5f7731787f8b615",
+            "path": "frames_024_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_3bd27af71451477d900110512ae42544",
+          "path": "frames_024_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              16.828962326049805,
+              11.921380996704102,
+              10.368396759033203
+            ],
+            "quaternion": [
+              0.048749680105652865,
+              0.4796836573331341,
+              -0.01766067707512466,
+              0.8759081904299977
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 946.5722045898438,
+            "fy": 946.5723266601562,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -28.769960403442383,
+          0,
+          -23.40894317626953
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_683c33535f40b308e54843a05fa8437f",
+            "path": "frames_025_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_ae3b2674b2f3f6e210cab016ff815c85",
+            "path": "frames_025_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_4346fda71f40420e8ffb494ef50093cb",
+          "path": "frames_025_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              17.254955291748047,
+              11.87100887298584,
+              9.630515098571777
+            ],
+            "quaternion": [
+              0.048233971792158166,
+              0.49954119835562866,
+              -0.01854384935418916,
+              0.8647474780314222
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 944.90185546875,
+            "fy": 944.90185546875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -26.005355834960938,
+          0,
+          -18.92876434326172
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_5caf52bade0f892fa6a83d856d5e13c4",
+            "path": "frames_026_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_e0314356c58d4eb70dbea50b9aaa2493",
+            "path": "frames_026_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_0921fb88275b4ca8b4326f18c17c68c4",
+          "path": "frames_026_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              17.7154598236084,
+              11.830879211425781,
+              8.916420936584473
+            ],
+            "quaternion": [
+              0.047461921734983974,
+              0.519421772716765,
+              -0.019028151951697967,
+              0.852986704143915
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 944.6299438476562,
+            "fy": 944.6300048828125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -24.899797439575195,
+          0,
+          -16.14159393310547
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_6a36cc55bbd9549849e3cf5e6cef6c9e",
+            "path": "frames_027_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_4e0949df56d2a82574e33837f55647ef",
+            "path": "frames_027_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_3d8df34288154a19875e518dd166fd9b",
+          "path": "frames_027_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              18.34388542175293,
+              11.75706958770752,
+              7.686389446258545
+            ],
+            "quaternion": [
+              0.046861556168037256,
+              0.5513647371761433,
+              -0.019261360272425244,
+              0.8327243968760901
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 942.7413940429688,
+            "fy": 942.741455078125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -23.460458755493164,
+          0,
+          -12.245796203613281
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_94cb188d7f62d95a414cf43d0ed77d61",
+            "path": "frames_028_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_c65ee2c29bb46888ff58ed68f6235da5",
+            "path": "frames_028_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_fa5eb6dd16194036af9c9751788eb76b",
+          "path": "frames_028_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              18.68427848815918,
+              11.70577621459961,
+              6.978757858276367
+            ],
+            "quaternion": [
+              0.04620679268562646,
+              0.5686548833854742,
+              -0.019091314471198478,
+              0.8210554656192979
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 943.1000366210938,
+            "fy": 943.0999755859375,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -19.4647159576416,
+          0,
+          -7.965035438537598
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_3afb758b2f67c7692fe0841ca20e6dba",
+            "path": "frames_029_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_a433187ca57acea5b6d8c7f88e2d5a26",
+            "path": "frames_029_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_5a2c4c49c2004f45ab5e865bae197e87",
+          "path": "frames_029_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.058460235595703,
+              11.598007202148438,
+              5.694176197052002
+            ],
+            "quaternion": [
+              0.04545523769134891,
+              0.5984121834061351,
+              -0.01929067347894995,
+              0.7996652737453676
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.3414916992188,
+            "fy": 940.341552734375,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -20.790306091308594,
+          0,
+          -7.137701511383057
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_fa185dc6ee10332e8ba8de912486bb86",
+            "path": "frames_030_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_8055880db267881438074228ad3618ba",
+            "path": "frames_030_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_2e5c5ed3664449f8a2b53304b57ced22",
+          "path": "frames_030_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.28090476989746,
+              11.546577453613281,
+              4.989314079284668
+            ],
+            "quaternion": [
+              0.04488048706000198,
+              0.6141715696596398,
+              -0.019043268036868868,
+              0.7876651438559074
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 941.0361328125,
+            "fy": 941.0362548828125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -20.22123146057129,
+          0,
+          -5.352954864501953
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_c85687e40d96aa47eaf6e03decac21cc",
+            "path": "frames_031_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_d29861189377d95fde77e6f67b54aabc",
+            "path": "frames_031_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_fbfe5f93878e437a85df640b95006dd8",
+          "path": "frames_031_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.45867347717285,
+              11.493983268737793,
+              4.288205623626709
+            ],
+            "quaternion": [
+              0.04435482749842802,
+              0.6286432944079271,
+              -0.01910000832632692,
+              0.7761929189031984
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 941.3709106445312,
+            "fy": 941.3709716796875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -38.50447082519531,
+          0,
+          -13.531364440917969
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_ce8d28438119ce8b883462c5465f04c5",
+            "path": "frames_032_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_4cf101c970ac5903659b58c985fd1175",
+            "path": "frames_032_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_8dc4e9c13d5c41c6b8600dd1dcd2d9df",
+          "path": "frames_032_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.63946533203125,
+              11.44482135772705,
+              3.607665538787842
+            ],
+            "quaternion": [
+              0.04369302358330308,
+              0.6428421349400675,
+              -0.019340599834264133,
+              0.7645069328880516
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 942.5659790039062,
+            "fy": 942.56591796875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -31.875038146972656,
+          0,
+          -11.424579620361328
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_1954379ad976b3fbef6cbafa5b6e380f",
+            "path": "frames_033_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_ed4444837e5d76178eb1860860e01dd9",
+            "path": "frames_033_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_851e59b6b24c4b09bdc51b3e4dd44b06",
+          "path": "frames_033_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.84589958190918,
+              11.396450996398926,
+              2.9726321697235107
+            ],
+            "quaternion": [
+              0.04277944649137964,
+              0.6570881060075533,
+              -0.019708741379491156,
+              0.752340817325854
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 944.7494506835938,
+            "fy": 944.7494506835938,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -31.172758102416992,
+          0,
+          -9.987119674682617
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_0d26d234f273489133d6932ab6f3f8e3",
+            "path": "frames_034_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_41c586bd959f0d0d271ca5864deb570e",
+            "path": "frames_034_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_a1ddc9ae1f424959beba69febb6a5c56",
+          "path": "frames_034_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.821603775024414,
+              11.344703674316406,
+              2.3397159576416016
+            ],
+            "quaternion": [
+              0.04205982568620398,
+              0.6705911573866209,
+              -0.02011578289335096,
+              0.7403606053651869
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 942.512451171875,
+            "fy": 942.512451171875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -27.293886184692383,
+          0,
+          -7.295129776000977
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_b48468ad6aaa6252f4e326d6e083f508",
+            "path": "frames_035_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_29f157f28449b7c405d93f74b863ca4b",
+            "path": "frames_035_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_02d97f7cacff4f86975906e951264dbd",
+          "path": "frames_035_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.883296966552734,
+              11.290271759033203,
+              1.7425479888916016
+            ],
+            "quaternion": [
+              0.041691057639917796,
+              0.6837107589398786,
+              -0.021043676715141114,
+              0.728257246783737
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 941.2839965820312,
+            "fy": 941.2840576171875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -24.41620635986328,
+          0,
+          -4.90338134765625
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_78ece2112fee755fbbddcafa5c169a9a",
+            "path": "frames_036_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_2ca82ca722166550ed48ffd931fbc70a",
+            "path": "frames_036_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_98117d392501423ca74cde3891f85583",
+          "path": "frames_036_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.97593116760254,
+              11.246213912963867,
+              1.184499979019165
+            ],
+            "quaternion": [
+              0.041582149041424,
+              0.6968270993743875,
+              -0.021948887062002338,
+              0.7156962797271715
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 943.0923461914062,
+            "fy": 943.0922241210938,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -20.89800453186035,
+          0,
+          -1.566979169845581
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_127de7d6a898cafb386d08a71f588ff9",
+            "path": "frames_037_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_7ae6fa2550adb8a139af05568204d606",
+            "path": "frames_037_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_d98200fc60cb4ac5974fc43e231da7b0",
+          "path": "frames_037_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.923748016357422,
+              11.155948638916016,
+              0.003595397574827075
+            ],
+            "quaternion": [
+              0.04440522246398747,
+              0.7215250374725527,
+              -0.02625291195751487,
+              0.6904640331921035
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 942.2918090820312,
+            "fy": 942.2919311523438,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -24.53417205810547,
+          0,
+          -1.8403348922729492
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_b0ea47726820aa4763ab48b8be276986",
+            "path": "frames_038_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_288f53310fc3a96ac0213fa1504efc5d",
+            "path": "frames_038_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_91549120fa3e4864a237cd674c040285",
+          "path": "frames_038_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.98309326171875,
+              11.157861709594727,
+              0.00015165682998485863
+            ],
+            "quaternion": [
+              0.0443154889523953,
+              0.7215415110510359,
+              -0.02613114948680668,
+              0.6904572023634747
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 943.9093627929688,
+            "fy": 943.9093627929688,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -24.30984115600586,
+          0,
+          -1.274436593055725
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_0620ec449f0866f40a141031ff202a36",
+            "path": "frames_039_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_41ed2ceac1b90b629c3abe4a15f81b4b",
+            "path": "frames_039_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_2233016588b54d1a8ece7c2b136d65c8",
+          "path": "frames_039_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.93250274658203,
+              11.132841110229492,
+              -0.48613014817237854
+            ],
+            "quaternion": [
+              0.04592852788656122,
+              0.7306944700800858,
+              -0.028094986684168894,
+              0.6805783080908268
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 944.398681640625,
+            "fy": 944.3988037109375,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -57.441246032714844,
+          0,
+          -0.11726513504981995
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_c3d589eec4f9068c6fa47e04e5eac5b4",
+            "path": "frames_040_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_d4b9753b59cdf35806ad79f3060c38b4",
+            "path": "frames_040_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_74e4526bbbff4fc4b7deab5b5adbcd68",
+          "path": "frames_040_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.890676498413086,
+              11.118410110473633,
+              -1.0530258417129517
+            ],
+            "quaternion": [
+              0.047818859437870086,
+              0.7397713154008057,
+              -0.030355850364360056,
+              0.6704701931785482
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 945.3168334960938,
+            "fy": 945.3169555664062,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -53.391334533691406,
+          0,
+          0.371425986289978
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_884dd0e81d8dcb0666295e068c6a7c44",
+            "path": "frames_041_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_03b4ee321af7f6810fc8e70e862bebce",
+            "path": "frames_041_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_f822d47bda91416c9b373814be0e80ef",
+          "path": "frames_041_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.777402877807617,
+              11.078150749206543,
+              -1.627334713935852
+            ],
+            "quaternion": [
+              0.05033561307117696,
+              0.7477559754792026,
+              -0.033891632265007555,
+              0.6611948914308916
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 944.1049194335938,
+            "fy": 944.1049194335938,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -61.94488525390625,
+          0,
+          0.6319650411605835
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_d1bd7297d09c6a0b653f20500c1e4283",
+            "path": "frames_042_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_83bcffed2059ea2a69b984401fffb08f",
+            "path": "frames_042_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_a21266fcb7fb47d189ae6d22ccae1cf1",
+          "path": "frames_042_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.78082847595215,
+              11.050296783447266,
+              -2.235522747039795
+            ],
+            "quaternion": [
+              0.052726343155045256,
+              0.7564616026148948,
+              -0.03713998791255156,
+              0.6508505187865005
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 946.720947265625,
+            "fy": 946.7208862304688,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -72.2086181640625,
+          0,
+          7.945064067840576
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_c75ce6ec25e76a5f9bf55896d2292395",
+            "path": "frames_043_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_1e56f84cabe106b9ad5a9c7dbd368f13",
+            "path": "frames_043_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_79667ab5d2e84525b010f1464fcb3df9",
+          "path": "frames_043_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -1.0641978979110718,
+              10.22367000579834,
+              -11.608277320861816
+            ],
+            "quaternion": [
+              -0.00805607456910288,
+              0.9867487024437198,
+              -0.11575735580764629,
+              -0.11341222361189447
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 938.3980102539062,
+            "fy": 938.3981323242188,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          11.711663246154785,
+          0,
+          53.06006622314453
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_ed0d57b3bebc85b7b4ad5297b1ac7cf3",
+            "path": "frames_044_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_423c6fcb9513badd64f2eed14c965879",
+            "path": "frames_044_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_93c8c7ba16034cb7b3a6005e796d622c",
+          "path": "frames_044_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -1.0894591808319092,
+              10.791571617126465,
+              -11.715622901916504
+            ],
+            "quaternion": [
+              -0.006955174211987663,
+              0.9888539365657445,
+              -0.09621146858606694,
+              -0.11341459783741954
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 937.165283203125,
+            "fy": 937.165283203125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          8.974085807800293,
+          0,
+          45.798336029052734
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_7fcb2af641ac4291e96c851cd5a9b85d",
+            "path": "frames_045_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_a6bee2668a71a15169a5024d3f7e2ace",
+            "path": "frames_045_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_c230dba19c18441f8757ed1057967e4b",
+          "path": "frames_045_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -1.1415764093399048,
+              11.359046936035156,
+              -11.973862648010254
+            ],
+            "quaternion": [
+              -0.004650648623644929,
+              0.990566074843282,
+              -0.07670661010794307,
+              -0.11346064869680929
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 941.2361450195312,
+            "fy": 941.2362060546875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          7.203022480010986,
+          0,
+          34.63084030151367
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_8d2fcdc84bd1e34d4fa1510b850e2d47",
+            "path": "frames_046_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_b936e145a69f28d84cdb520f0ac4af0e",
+            "path": "frames_046_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_e381c26b724c4618914177ae0fcebfef",
+          "path": "frames_046_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -1.1882596015930176,
+              11.938963890075684,
+              -12.268383979797363
+            ],
+            "quaternion": [
+              -0.0018638918802237076,
+              0.9919293227441105,
+              -0.05693022651759083,
+              -0.11327706694704344
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 944.7156372070312,
+            "fy": 944.7156372070312,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          8.315168380737305,
+          0,
+          32.75912094116211
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_60ecc24b076da550db5fa5b6a817d193",
+            "path": "frames_047_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_9a39764da1336c67ec3c0aae6e4d793e",
+            "path": "frames_047_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_30b1a480ca7d4735a1c3d9736e380cb7",
+          "path": "frames_047_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -1.2049839496612549,
+              12.510517120361328,
+              -12.397294998168945
+            ],
+            "quaternion": [
+              0.00032458191780989737,
+              0.9928439576847694,
+              -0.03793445636093062,
+              -0.11323315484443215
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.3920288085938,
+            "fy": 940.3919067382812,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          8.0381441116333,
+          0,
+          29.981828689575195
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_f5ae2751aeb20b99235f251b1d644cc4",
+            "path": "frames_048_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_9ea4f19da60f0ea15328e57b8fbbf9a7",
+            "path": "frames_048_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_e6beccfdb99443268a21f9a68c1a1354",
+          "path": "frames_048_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -1.2474184036254883,
+              13.097675323486328,
+              -12.631837844848633
+            ],
+            "quaternion": [
+              0.002927062966120456,
+              0.993417874462137,
+              -0.01808179981906428,
+              -0.11307257632523268
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.7509765625,
+            "fy": 940.7509765625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          5.074212551116943,
+          0,
+          22.260286331176758
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_756b3bc113ef8c774786d0023a3aee4e",
+            "path": "frames_049_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_92e4fae81b59597cda3acb896d068c30",
+            "path": "frames_049_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_72c8d4af74784edd884efb1c4fca7723",
+          "path": "frames_049_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -1.284669280052185,
+              13.667699813842773,
+              -12.822026252746582
+            ],
+            "quaternion": [
+              0.0053490069353146555,
+              0.9935978940316089,
+              0.001574809878319064,
+              -0.11283675409459805
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.8014526367188,
+            "fy": 939.801513671875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          7.340743541717529,
+          0,
+          22.60657501220703
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_c6b78500039e5a025a0defe27dd9896c",
+            "path": "frames_050_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_52442bed471968245d009fa6116f9fc3",
+            "path": "frames_050_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_1af23306615841729f71a652f3c4ce4f",
+          "path": "frames_050_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -1.3188787698745728,
+              14.245718955993652,
+              -13.066325187683105
+            ],
+            "quaternion": [
+              0.008056392804774982,
+              0.9933854498155097,
+              0.021910225538495764,
+              -0.11242946520670163
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 941.3878784179688,
+            "fy": 941.3878173828125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          6.655585289001465,
+          0,
+          21.045764923095703
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_e0fb3a772255cb6dad9945088668b486",
+            "path": "frames_051_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_74ab0f9cdda81edf2b5a8ff7159dac20",
+            "path": "frames_051_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_2d484255e9804699a8378be2217d68f5",
+          "path": "frames_051_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -1.365208625793457,
+              14.978886604309082,
+              -13.291119575500488
+            ],
+            "quaternion": [
+              0.010722595680736928,
+              0.9923478251023345,
+              0.049948425574885026,
+              -0.11240985161063066
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.0475463867188,
+            "fy": 939.0475463867188,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          8.375361442565918,
+          0,
+          24.098590850830078
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_614941d43a70342d75273e23f3957ade",
+            "path": "frames_052_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_ec0246a19997a64d1f4cd4b7f01df064",
+            "path": "frames_052_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_1350251e6b0a415f8ce48a18d7b710d1",
+          "path": "frames_052_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -1.4164190292358398,
+              15.307402610778809,
+              -13.5208740234375
+            ],
+            "quaternion": [
+              0.011915450141681203,
+              0.9916904326037103,
+              0.06189524627944755,
+              -0.11214760995310481
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 942.5885009765625,
+            "fy": 942.5885620117188,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          5.267767906188965,
+          0,
+          18.597286224365234
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_321ea65af9d9355f74155d1570880b3e",
+            "path": "frames_053_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_df4242bb24ad95f0186e6f19c25611dd",
+            "path": "frames_053_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_b683dcfdef76473eaf5f46e925499bce",
+          "path": "frames_053_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -1.4085464477539062,
+              15.80768871307373,
+              -13.543930053710938
+            ],
+            "quaternion": [
+              0.014136266923694317,
+              0.9902849364838062,
+              0.0815565348579248,
+              -0.11173380040387998
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 937.1310424804688,
+            "fy": 937.131103515625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          4.863935947418213,
+          0,
+          15.676094055175781
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_998a4679143da83516325b223aa5d46a",
+            "path": "frames_054_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_c2ffef079983d459ee709ba2cf720fd7",
+            "path": "frames_054_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_3708384e580749d398c233b0a36ebd98",
+          "path": "frames_054_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -1.3295949697494507,
+              16.30388069152832,
+              -13.642790794372559
+            ],
+            "quaternion": [
+              0.01602753612875513,
+              0.9885812021033985,
+              0.10074888015185081,
+              -0.1109053113317353
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 936.4756469726562,
+            "fy": 936.4757080078125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          4.545386791229248,
+          0,
+          18.023582458496094
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_9a9fe7dc83fc3b7eac8dcb0418d5dc60",
+            "path": "frames_055_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_4ff58e77e85bf50e01da1144ef37e96b",
+            "path": "frames_055_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_8e66f5c8cc534fff8ef7752b8b72cef5",
+          "path": "frames_055_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -1.1755343675613403,
+              16.69622802734375,
+              -13.657896041870117
+            ],
+            "quaternion": [
+              0.01702931595188812,
+              0.9871099049566641,
+              0.11762988267095706,
+              -0.10717858292342315
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 934.38427734375,
+            "fy": 934.3842163085938,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          8.927538871765137,
+          0,
+          41.55622863769531
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_c291e484c5600da3ba1447e6979ff552",
+            "path": "frames_056_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_91d97db870ce9acf29823dce179fe7d5",
+            "path": "frames_056_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_3ee7f64eb12943c1b4d2d96bd001af9d",
+          "path": "frames_056_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              -0.7119191884994507,
+              17.061433792114258,
+              -13.690272331237793
+            ],
+            "quaternion": [
+              0.01762935463212131,
+              0.9857122137169178,
+              0.13505294365980633,
+              -0.0991026739970698
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 933.8768920898438,
+            "fy": 933.876953125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          7.933665752410889,
+          0,
+          37.45516586303711
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_d15c621ca41ed9999732270888e6c508",
+            "path": "frames_057_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_2de94b978e0f454b58739b86bfa400ab",
+            "path": "frames_057_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_279dad70c022490aa782f5d70c682609",
+          "path": "frames_057_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              0.22397316992282867,
+              17.366487503051758,
+              -13.843378067016602
+            ],
+            "quaternion": [
+              0.014852410608279392,
+              0.9870790168593371,
+              0.14521361752799689,
+              -0.06608650134150117
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 935.1018676757812,
+            "fy": 935.1018676757812,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          5.212621212005615,
+          0,
+          35.966552734375
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_43767a6502da25cd00a6b392f98b02bd",
+            "path": "frames_058_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_d58898d383dfd8a35f7635a4105b5040",
+            "path": "frames_058_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_c68064f27d6f47f384bd3e2a60552280",
+          "path": "frames_058_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              1.4506958723068237,
+              17.644311904907227,
+              -13.925232887268066
+            ],
+            "quaternion": [
+              0.011004287767685337,
+              0.9874727878427308,
+              0.15415499376872127,
+              -0.0318219549524597
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 935.9674682617188,
+            "fy": 935.9675903320312,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          3.511821746826172,
+          0,
+          35.0728645324707
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_0f5e4385e8fe9ee80d8c5c704502ff43",
+            "path": "frames_059_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_f461f7d431c57f51f7b7fc53f3b7b3a2",
+            "path": "frames_059_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_0c140f1559a24b37b22b0cefc044574b",
+          "path": "frames_059_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              2.8399128913879395,
+              17.85901641845703,
+              -13.844839096069336
+            ],
+            "quaternion": [
+              0.006438626965177353,
+              0.9867661411139311,
+              0.16167722176317026,
+              0.01056422249231995
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 936.1364135742188,
+            "fy": 936.1364135742188,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          0.6211667060852051,
+          0,
+          33.90349578857422
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_69c16b0037f09e65180dcd6edacb5e1e",
+            "path": "frames_060_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_853936235ae5eeed4e0a5ca9b0d03279",
+            "path": "frames_060_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_58408bf73aa94ec9bcdd8462bfb6b29f",
+          "path": "frames_060_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              5.281928539276123,
+              18.195280075073242,
+              -13.375799179077148
+            ],
+            "quaternion": [
+              -0.004976375788579606,
+              0.9805038977278183,
+              0.17221108472586324,
+              0.09450229903080831
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 934.6105346679688,
+            "fy": 934.610595703125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -2.5001821517944336,
+          0,
+          29.957002639770508
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_b063b332ec9db234ecfb7680f381dc9d",
+            "path": "frames_061_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_536ddc6f4e8f87c8732badb7e6ffc053",
+            "path": "frames_061_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_6871bc92e1e347a49e05351e9fe6947f",
+          "path": "frames_061_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              5.668119430541992,
+              18.2652587890625,
+              -13.341646194458008
+            ],
+            "quaternion": [
+              -0.0069534598498769045,
+              0.9788771138183563,
+              0.17362177093110046,
+              0.10773451674142945
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 936.5001831054688,
+            "fy": 936.5001831054688,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -2.2588510513305664,
+          0,
+          29.96173667907715
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_de14158eb4b363ed754ad128f0a8b7da",
+            "path": "frames_062_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_b001d9a87eb4a6bcb4c20ef47243c3c7",
+            "path": "frames_062_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_925f3fdf8c2a4b998e7f4656cab3d499",
+          "path": "frames_062_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              7.101723670959473,
+              18.465211868286133,
+              -12.87049388885498
+            ],
+            "quaternion": [
+              -0.016587233365077808,
+              0.9702410590527615,
+              0.17868280407518916,
+              0.16257185040866048
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 937.4269409179688,
+            "fy": 937.4268188476562,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -5.769008636474609,
+          0,
+          29.068317413330078
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_d984bf4cd4e58c49ced3cc0348a9e148",
+            "path": "frames_063_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_e73b30ad4ea16c0bfff9ab07e8fe3690",
+            "path": "frames_063_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_e2b830cff2184a55bb80c8fda0b81479",
+          "path": "frames_063_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              8.104042053222656,
+              18.529016494750977,
+              -12.099952697753906
+            ],
+            "quaternion": [
+              -0.02579169723953295,
+              0.9599594476198607,
+              0.1819867302554972,
+              0.21140831887555664
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 931.4901733398438,
+            "fy": 931.4900512695312,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -19.943246841430664,
+          0,
+          42.17268753051758
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_fbd1556e7c1a2bd963497f3eb5c53fe9",
+            "path": "frames_064_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_79b33b67c8b389f66e23f88a7cf27ef5",
+            "path": "frames_064_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_2b2555a695a7494fa198e1f40007867d",
+          "path": "frames_064_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              10.249954223632812,
+              18.918746948242188,
+              -11.092887878417969
+            ],
+            "quaternion": [
+              -0.04474286451777732,
+              0.9336162600249892,
+              0.18563399631348387,
+              0.30314810654922625
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 941.8560180664062,
+            "fy": 941.8560791015625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -26.191314697265625,
+          0,
+          35.57516098022461
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_10029b598c54e36ec8f98e1d6746433e",
+            "path": "frames_065_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_95053735843f462c9f01394d1480e5e6",
+            "path": "frames_065_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_b10d29f9c00f4645a618374894999529",
+          "path": "frames_065_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              10.429962158203125,
+              18.87651824951172,
+              -10.768030166625977
+            ],
+            "quaternion": [
+              -0.047374228059163984,
+              0.9293842038003405,
+              0.18567293157654988,
+              0.3154778070197257
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.1620483398438,
+            "fy": 939.1619262695312,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -27.721263885498047,
+          0,
+          35.40571594238281
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_af8e5dd5d72c171582559da4c1c91653",
+            "path": "frames_066_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_b09c67d12e65802a6f9e95115c9bc045",
+            "path": "frames_066_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_5ca5f137ecdb4f61bab600880813f525",
+          "path": "frames_066_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              11.332971572875977,
+              19.020404815673828,
+              -9.89467716217041
+            ],
+            "quaternion": [
+              -0.05891121855750817,
+              0.9103222595068107,
+              0.1851171921997614,
+              0.3654784225184311
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.1527709960938,
+            "fy": 940.1525268554688,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -31.737455368041992,
+          0,
+          32.02027130126953
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_29957c4e3fb4b0eb263f228640a297e1",
+            "path": "frames_067_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_8a8123deb93abf7dfc79d2676aae26ef",
+            "path": "frames_067_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_896ab26eb1e14dba9013cf129dd329bb",
+          "path": "frames_067_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              11.694180488586426,
+              19.094301223754883,
+              -9.190290451049805
+            ],
+            "quaternion": [
+              -0.06743107073376498,
+              0.8953567836140349,
+              0.18521702790876501,
+              0.39935439562958636
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 938.8405151367188,
+            "fy": 938.8404541015625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -30.672901153564453,
+          0,
+          27.806772232055664
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_e1f46ea86272ea65f80985df4a692873",
+            "path": "frames_068_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_78efeb699582edcecbd5b06a03cf9bc6",
+            "path": "frames_068_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_a5c97fc4f7024dbeaac1603b99199411",
+          "path": "frames_068_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              12.146492004394531,
+              19.105037689208984,
+              -4.3089799880981445
+            ],
+            "quaternion": [
+              -0.12635664225509885,
+              0.804811707630409,
+              0.21188186276592463,
+              0.5398316315758868
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.9225463867188,
+            "fy": 939.9226684570312,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -25.887123107910156,
+          0,
+          9.910673141479492
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_d17a345cd12d3a1daa994b015b0720d4",
+            "path": "frames_069_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_4a4f451d541689f0da2e30474f7e4fe2",
+            "path": "frames_069_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_23b964a7dfc24ceea2789c4135f417b5",
+          "path": "frames_069_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              12.146738052368164,
+              19.104759216308594,
+              -4.312801837921143
+            ],
+            "quaternion": [
+              -0.12639276397882432,
+              0.8048388373914328,
+              0.2118940783624856,
+              0.5397779308151759
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.4180908203125,
+            "fy": 940.4181518554688,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -25.81976890563965,
+          0,
+          9.947870254516602
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_ccd47ce1d6d87edded3a9ec9f708bb82",
+            "path": "frames_070_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_010fb3f8e7a3b00f5ddb1b6b557c4d3c",
+            "path": "frames_070_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_039d39ee9fc84fa6a439ecb8429cc6b9",
+          "path": "frames_070_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              12.370462417602539,
+              19.1110897064209,
+              -2.817246675491333
+            ],
+            "quaternion": [
+              -0.1444928027439563,
+              0.7706936811903216,
+              0.21260821227609678,
+              0.5830530231473544
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.1701049804688,
+            "fy": 940.1699829101562,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -23.59709358215332,
+          0,
+          6.2183074951171875
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_cfcf7a8a406c62f0378539f1efe38be5",
+            "path": "frames_071_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_59451181f3e37c7bc5e47aed7bfd26eb",
+            "path": "frames_071_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_2fb4fef889b54d34862186d3dbc16f83",
+          "path": "frames_071_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              12.475493431091309,
+              19.108308792114258,
+              -1.475074291229248
+            ],
+            "quaternion": [
+              -0.1600843848794755,
+              0.732846850557948,
+              0.20685990968431342,
+              0.6281062498578202
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.0762939453125,
+            "fy": 940.0763549804688,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -22.859371185302734,
+          0,
+          2.6219310760498047
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_8793eca75253791b8f85cc4639b2ad6c",
+            "path": "frames_072_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_eb769022ced7717d2a4e6f9c7696ecac",
+            "path": "frames_072_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_4e762bde7a8f449aabb30202fe651e25",
+          "path": "frames_072_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              12.24981689453125,
+              19.17851448059082,
+              1.8123078346252441
+            ],
+            "quaternion": [
+              -0.19363875752387763,
+              0.5992671254576051,
+              0.1683521224048741,
+              0.7583142533357541
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 943.5140991210938,
+            "fy": 943.51416015625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -22.206424713134766,
+          0,
+          -7.80902624130249
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_483dcd09436e23e92c6d3711fad5ff57",
+            "path": "frames_073_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_a358e4c65969ec8a89ea719102b11ecc",
+            "path": "frames_073_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_7fcb16ee805e4e0a8448122f326702c3",
+          "path": "frames_073_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              12.269791603088379,
+              19.187358856201172,
+              1.8163087368011475
+            ],
+            "quaternion": [
+              -0.19361736808929733,
+              0.5992681615511548,
+              0.1683105235586069,
+              0.7583281301552122
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 944.1864624023438,
+            "fy": 944.1864624023438,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -22.257572174072266,
+          0,
+          -7.83192253112793
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_841b7acfc329d522df3e6324fb48397d",
+            "path": "frames_074_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_365534faa260f9d7f467d17d01b5fac9",
+            "path": "frames_074_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_402e2d12f8ba4c2eabc0f7e0e000a349",
+          "path": "frames_074_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              12.291593551635742,
+              19.197355270385742,
+              1.81974458694458
+            ],
+            "quaternion": [
+              -0.19353305566885018,
+              0.599297464925306,
+              0.16824004018516944,
+              0.7583421350393711
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 944.944091796875,
+            "fy": 944.9440307617188,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -22.045167922973633,
+          0,
+          -7.743083477020264
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_c8dee35f1ce02c7d817bbc7dc39edc23",
+            "path": "frames_075_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_562a84f05fa8a08182aa3bb98973be81",
+            "path": "frames_075_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_d166c43e95f846258e9ba5980bff2551",
+          "path": "frames_075_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              11.762343406677246,
+              19.164243698120117,
+              3.203984498977661
+            ],
+            "quaternion": [
+              -0.20314381111200663,
+              0.5510813077430239,
+              0.15377914169098836,
+              0.7946030202836577
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 941.9948120117188,
+            "fy": 941.9947509765625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -21.137813568115234,
+          0,
+          -9.801445007324219
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_c38d668228749aadf184dd9d03287919",
+            "path": "frames_076_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_a1ca28951db9f0f2a8222910090a36e9",
+            "path": "frames_076_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_4b68b68d58ff4543894f770ca9708c5c",
+          "path": "frames_076_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              11.60483455657959,
+              19.1433162689209,
+              3.4562907218933105
+            ],
+            "quaternion": [
+              -0.20282649618890317,
+              0.542647557141441,
+              0.14998857362164683,
+              0.8011856644717897
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.6378784179688,
+            "fy": 940.6378784179688,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -21.275070190429688,
+          0,
+          -10.024459838867188
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_cc023828610a92b45eab2e5f2ed2579e",
+            "path": "frames_077_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_54598728fe4a9c9cc2d355ce4a415b33",
+            "path": "frames_077_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_82df00828de64ed88714a61e1571b70c",
+          "path": "frames_077_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              11.233011245727539,
+              19.20720100402832,
+              4.577631950378418
+            ],
+            "quaternion": [
+              -0.19939145593783056,
+              0.5049904975896073,
+              0.1323736876944922,
+              0.829279718460155
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 945.8142700195312,
+            "fy": 945.8143920898438,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -22.497915267944336,
+          0,
+          -12.090279579162598
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_6577f8c51dadfad1e51f34437e9ed643",
+            "path": "frames_078_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_00a526c0c0551aedfe70c29833cd28d8",
+            "path": "frames_078_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_b4a0bc93354347d2a2eb78cbb547e5ea",
+          "path": "frames_078_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              10.649794578552246,
+              19.232881546020508,
+              5.669048309326172
+            ],
+            "quaternion": [
+              -0.19589345019013069,
+              0.461548315037764,
+              0.11462306088270977,
+              0.857589915386303
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 948.3486938476562,
+            "fy": 948.3486938476562,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -23.348865509033203,
+          0,
+          -14.764873504638672
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_e5309ca993a60df07dbc430f96de624b",
+            "path": "frames_079_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_6d6bb553eba9769e760f7dde1495ca1d",
+            "path": "frames_079_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_1a6d100b5c1043059080dac0d3665d14",
+          "path": "frames_079_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              8.559561729431152,
+              19.151596069335938,
+              8.082369804382324
+            ],
+            "quaternion": [
+              -0.21073642880517995,
+              0.3175278269141508,
+              0.07614117438479301,
+              0.9213950066464007
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 947.1802368164062,
+            "fy": 947.18017578125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -17.832107543945312,
+          0,
+          -26.587257385253906
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_70194a0c76c9aa0a2aa40971fa22562e",
+            "path": "frames_080_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_201d932b630eb214166399c8e614c5fa",
+            "path": "frames_080_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_2046bf57b2454bfabd3b4cb18cd7737e",
+          "path": "frames_080_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              8.328288078308105,
+              19.2171573638916,
+              8.753012657165527
+            ],
+            "quaternion": [
+              -0.21336803580606203,
+              0.2870285117413022,
+              0.06799414069923704,
+              0.9313782859689228
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 953.0682983398438,
+            "fy": 953.0684204101562,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -15.62968921661377,
+          0,
+          -26.97187042236328
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_12d6c818f54ad681d697b0344d3642e6",
+            "path": "frames_081_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_32bda0ad01aa10d03b2949999c420d31",
+            "path": "frames_081_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_dd32c0ed758f48f096e2e4fefdaf7501",
+          "path": "frames_081_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              7.0424485206604,
+              19.145795822143555,
+              11.001310348510742
+            ],
+            "quaternion": [
+              -0.18638096564954237,
+              0.214671647123562,
+              0.040071956994918986,
+              0.9579000249647134
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 948.61767578125,
+            "fy": 948.61767578125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -16.247066497802734,
+          0,
+          -38.45161437988281
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_999ec330134877bc73fff6529fdf3670",
+            "path": "frames_082_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_8d5eb4527391eba679f6ff110593c3ce",
+            "path": "frames_082_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_aa7a901ba96748bbbf2a3b6d81bb52f8",
+          "path": "frames_082_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              6.938546180725098,
+              19.137222290039062,
+              10.992259979248047
+            ],
+            "quaternion": [
+              -0.18673095871061046,
+              0.20871902010071297,
+              0.03850225131314465,
+              0.9592108716810052
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 947.3290405273438,
+            "fy": 947.3290405273438,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -15.22940731048584,
+          0,
+          -37.925994873046875
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_ec009af50e18154bb20a005387ccaaf9",
+            "path": "frames_083_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_af7300393ea0321983ab5c82820130ec",
+            "path": "frames_083_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_abd71d91c75840169951a21913cf9d02",
+          "path": "frames_083_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              7.0501580238342285,
+              19.143272399902344,
+              10.758941650390625
+            ],
+            "quaternion": [
+              -0.18706835585264586,
+              0.20891537549862413,
+              0.038413401392926615,
+              0.9591059413392676
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 947.6447143554688,
+            "fy": 947.644775390625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -14.723958969116211,
+          0,
+          -39.80873489379883
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_76f79aa1f16e634d44ade6b03e3734e7",
+            "path": "frames_084_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_be46f99b5a4646144ed0159f3cc5152f",
+            "path": "frames_084_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_11dd534d26664c83b36328c7a76b809a",
+          "path": "frames_084_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              7.564614295959473,
+              19.033489227294922,
+              10.393304824829102
+            ],
+            "quaternion": [
+              -0.18676753757370196,
+              0.22261736358364925,
+              0.04208330037167212,
+              0.9559227961344728
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 947.2284545898438,
+            "fy": 947.2284545898438,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -14.807476997375488,
+          0,
+          -38.591102600097656
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_871b233f659b85f2a8abc71dccc5e325",
+            "path": "frames_085_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_f613bb4bb6963504ccd816fdca2184d8",
+            "path": "frames_085_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_6421a86ad85e48b0a8a399665b139ec0",
+          "path": "frames_085_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              9.275131225585938,
+              18.887798309326172,
+              9.262939453125
+            ],
+            "quaternion": [
+              -0.18350061741582377,
+              0.29458853705273413,
+              0.05933050364231503,
+              0.9359620764660771
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 944.8643188476562,
+            "fy": 944.8643188476562,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -19.67093849182129,
+          0,
+          -35.28672409057617
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_72fdcd68965bd2ca4c3f6dac3a8b0147",
+            "path": "frames_086_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_8e975d552e752f5a4eb0ee4536646e48",
+            "path": "frames_086_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_8d9d139240804212a9508788482f12cd",
+          "path": "frames_086_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              9.337007522583008,
+              18.91986846923828,
+              9.330514907836914
+            ],
+            "quaternion": [
+              -0.18339090641808478,
+              0.2947252544659739,
+              0.059277466073795436,
+              0.9359438988737466
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 947.4160766601562,
+            "fy": 947.4161376953125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -20.15865135192871,
+          0,
+          -35.50627899169922
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_37088f7eed42ce06cad1d31dc7b43316",
+            "path": "frames_087_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_3d52510ce2ce61223f41e8a01cffe6cd",
+            "path": "frames_087_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_91ebab81502b4a9fb0d6345a1e69ff04",
+          "path": "frames_087_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              10.175165176391602,
+              18.89994239807129,
+              8.748458862304688
+            ],
+            "quaternion": [
+              -0.18057432228049752,
+              0.33475294682562223,
+              0.06903440008347747,
+              0.922262235120584
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 947.9243774414062,
+            "fy": 947.92431640625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -23.221162796020508,
+          0,
+          -34.9011116027832
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_628d38e94115d34a8e93cee43d8d07ed",
+            "path": "frames_088_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_aa0ddf70beb2a6aa3e940d3c7eedd3c2",
+            "path": "frames_088_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_199bf2a4ed7e45a0a32448e226b37559",
+          "path": "frames_088_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              11.576589584350586,
+              18.81113052368164,
+              7.177255630493164
+            ],
+            "quaternion": [
+              -0.16935420889606814,
+              0.42110354953558143,
+              0.08700399252306876,
+              0.8868039567924619
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 947.8721313476562,
+            "fy": 947.872314453125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -31.61662483215332,
+          0,
+          -32.029632568359375
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_cd976392104c1aef4a28f843a7bf30ad",
+            "path": "frames_089_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_f639751a8bea4d280ada9b24562bd419",
+            "path": "frames_089_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_bffd3035515d476bbc3fe62f9e2091be",
+          "path": "frames_089_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              11.895983695983887,
+              18.87193489074707,
+              7.0628509521484375
+            ],
+            "quaternion": [
+              -0.17265898328546075,
+              0.43185876111483673,
+              0.09160686437730227,
+              0.8805084146890068
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 947.7592163085938,
+            "fy": 947.7591552734375,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -30.09103775024414,
+          0,
+          -29.21938705444336
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_36852c4ac125d8f213eaaef9f3adc0f2",
+            "path": "frames_090_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_5231fc4f05164b295886d23cf4da052e",
+            "path": "frames_090_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_c2a308a65e064954a58d6d33e31fd71a",
+          "path": "frames_090_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              12.50944709777832,
+              18.811220169067383,
+              5.987984657287598
+            ],
+            "quaternion": [
+              -0.16779657361537603,
+              0.48137146771411404,
+              0.10320094892120858,
+              0.854093311117387
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 943.0339965820312,
+            "fy": 943.0340576171875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -33.750953674316406,
+          0,
+          -24.842941284179688
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_b10c6ed13b71f9e93eaa5d336251caa7",
+            "path": "frames_091_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_df06d64120ec2cd6d4c964510a4cc399",
+            "path": "frames_091_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_9704a4357c61426f96ce704fcf122bff",
+          "path": "frames_091_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              13.232598304748535,
+              18.830411911010742,
+              4.970229625701904
+            ],
+            "quaternion": [
+              -0.16213802239071326,
+              0.5275004022367914,
+              0.11387173298134207,
+              0.8261282078243534
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 946.1614379882812,
+            "fy": 946.1614990234375,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -35.670345306396484,
+          0,
+          -20.847366333007812
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_f131b9a5afe396fa9bceb521a21a2cd4",
+            "path": "frames_092_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_96fc7777ec920bb65450d8e01b116440",
+            "path": "frames_092_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_c6de13f2c4844dd3874b2ec59ab2117d",
+          "path": "frames_092_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              13.60706901550293,
+              18.78175926208496,
+              3.8515164852142334
+            ],
+            "quaternion": [
+              -0.15657994798684893,
+              0.5726253521922218,
+              0.12417369241379142,
+              0.7950873033997554
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 943.0892944335938,
+            "fy": 943.0892944335938,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -37.577735900878906,
+          0,
+          -16.143831253051758
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_d1c6d4e6fe4b9c914575974460a1ace4",
+            "path": "frames_093_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_f5db44e51b30c5d2a5492320db171b96",
+            "path": "frames_093_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_30aba3cf46974734be1c7a4474f14039",
+          "path": "frames_093_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              14.03075122833252,
+              18.80516815185547,
+              2.854567289352417
+            ],
+            "quaternion": [
+              -0.15103646942952637,
+              0.6113779648436486,
+              0.13279511092064855,
+              0.7653564055533046
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 947.9974975585938,
+            "fy": 947.9974975585938,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -38.23887252807617,
+          0,
+          -11.988717079162598
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_c303a922e5b604eabc4bf9af7e5da4c9",
+            "path": "frames_094_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_4d97cfe14e15ebb39c11d46b15914277",
+            "path": "frames_094_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_828f0d5243474a55b7d2f4957bde5a4b",
+          "path": "frames_094_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              14.029657363891602,
+              18.722379684448242,
+              1.8928277492523193
+            ],
+            "quaternion": [
+              -0.14501077199952395,
+              0.6489163538783894,
+              0.1406822013561233,
+              0.733544790653491
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 944.4103393554688,
+            "fy": 944.4103393554688,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -38.87635040283203,
+          0,
+          -7.472051620483398
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_bc89f371c317efc26c51fbfe21b9cab2",
+            "path": "frames_095_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_4ff832155c360f4410bb087ffe120c30",
+            "path": "frames_095_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_2434e24bfb3d4a22a383420fe930198c",
+          "path": "frames_095_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              14.06491470336914,
+              18.704343795776367,
+              1.0323125123977661
+            ],
+            "quaternion": [
+              -0.13847758262439236,
+              0.6808648213858497,
+              0.14716678350138562,
+              0.7039808178804136
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 944.3557739257812,
+            "fy": 944.3556518554688,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -32.81767272949219,
+          0,
+          3.033823013305664
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_6db36d5eec78ceaafea456a445da4f9b",
+            "path": "frames_096_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_39537aff54ee9e6b18ca186f9075047c",
+            "path": "frames_096_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_5a8d66f6a7f14b1d88dee513155b832a",
+          "path": "frames_096_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              14.042139053344727,
+              18.69464683532715,
+              0.20671623945236206
+            ],
+            "quaternion": [
+              -0.13303110629756074,
+              0.7054672039907938,
+              0.15229838872395807,
+              0.679281936785268
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 943.713623046875,
+            "fy": 943.7135620117188,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -34.04954528808594,
+          0,
+          4.8598246574401855
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_c84d3d783a20a75bb1c9671ecf916bbb",
+            "path": "frames_097_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_56949a8625de1e9f6169f66b910fd122",
+            "path": "frames_097_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_5b7a8e72cdd144eeb1ff4617bf5f4096",
+          "path": "frames_097_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              13.973443031311035,
+              18.693798065185547,
+              -0.5829658508300781
+            ],
+            "quaternion": [
+              -0.12769739856919282,
+              0.725256420658502,
+              0.15617247420773334,
+              0.6582603261568433
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 943.1864624023438,
+            "fy": 943.1865234375,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -34.97381591796875,
+          0,
+          6.293400764465332
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_7b2ca63668b768596f4e0c725bb36bbd",
+            "path": "frames_098_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_053b1f8d1bfc0c4b4c04962f21e69917",
+            "path": "frames_098_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_1ea055f5da2a4d298c571d62a320288b",
+          "path": "frames_098_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              13.8628568649292,
+              18.696788787841797,
+              -1.3444993495941162
+            ],
+            "quaternion": [
+              -0.1200208080818298,
+              0.7432279362907095,
+              0.15650063556758376,
+              0.6393080567389872
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 943.268798828125,
+            "fy": 943.2686767578125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -37.96438217163086,
+          0,
+          7.348288536071777
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_a8f39e37a940b5c29d864cce05170c05",
+            "path": "frames_099_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_7739f6699d7b4965eb3052845646c355",
+            "path": "frames_099_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_7850ffdcbf894cc586428783c56a5f7c",
+          "path": "frames_099_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              4.367313385009766,
+              14.08492660522461,
+              -11.963458061218262
+            ],
+            "quaternion": [
+              0.006208799591818044,
+              0.9922255062956061,
+              0.008404016973215423,
+              0.1240135797514555
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 950.6437377929688,
+            "fy": 950.643798828125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -13.881364822387695,
+          0,
+          77.73014831542969
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_544a621cec39da75e59fbf1262d010dc",
+            "path": "frames_100_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_310fbe9963dfde91159c3c7105197348",
+            "path": "frames_100_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_26043e18b388469fa6fcb56bad929c6b",
+          "path": "frames_100_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              3.7152669429779053,
+              13.713446617126465,
+              -12.16600227355957
+            ],
+            "quaternion": [
+              0.007116192000003907,
+              0.9948520469239781,
+              -0.007838900892279482,
+              0.10078351142617975
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 950.821533203125,
+            "fy": 950.821533203125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -6.140314102172852,
+          0,
+          61.963600158691406
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_03820ecd8cc9437ca0d965b17d2b8b1c",
+            "path": "frames_101_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_eb22be220c681c4e8a497373d7968426",
+            "path": "frames_101_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_402aa48bb9fc44d580f90fd07585e597",
+          "path": "frames_101_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              2.774726629257202,
+              13.137661933898926,
+              -12.242630958557129
+            ],
+            "quaternion": [
+              0.006783875303380735,
+              0.9977548012799643,
+              -0.027303536942983157,
+              0.0607770715734995
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 945.6402587890625,
+            "fy": 945.6403198242188,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          4.376859664916992,
+          0,
+          55.986289978027344
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_ebf3b6265d9a68a737c3e9f7b711431a",
+            "path": "frames_102_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_6996a1c6809393e392536c6ede7c0c72",
+            "path": "frames_102_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_27fb48d395074554afdf94b1c234eb41",
+          "path": "frames_102_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              1.7932780981063843,
+              12.45398998260498,
+              -12.507085800170898
+            ],
+            "quaternion": [
+              0.005474232630280915,
+              0.9984760334864866,
+              -0.04931751784615939,
+              0.024154207991482064
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 947.7777709960938,
+            "fy": 947.7777709960938,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          9.466782569885254,
+          0,
+          54.433189392089844
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_fed086cfa376329f91ccf5a61d4d12bb",
+            "path": "frames_103_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_9deb63826d39091bcf1ff0e721f44987",
+            "path": "frames_103_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_ff1c54bfbaf642ca96c05825329766e8",
+          "path": "frames_103_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              1.2827482223510742,
+              12.052376747131348,
+              -13.001459121704102
+            ],
+            "quaternion": [
+              0.005457460721181284,
+              0.9975020914801147,
+              -0.06719143727280796,
+              0.021097496829907924
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 948.3408813476562,
+            "fy": 948.3409423828125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -0.09149050712585449,
+          0,
+          68.38640594482422
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_6d27c3065ca90d0d2b5823b406620ba7",
+            "path": "frames_104_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_fe8e0e3ac74652703721f5de23251e41",
+            "path": "frames_104_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_9b85cd99b20c4a1b9a53298fc60107f0",
+          "path": "frames_104_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              1.009743094444275,
+              11.827213287353516,
+              -13.49057388305664
+            ],
+            "quaternion": [
+              0.005366637056504498,
+              0.9974925197208145,
+              -0.0677502985288274,
+              0.019742577262828513
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 941.5896606445312,
+            "fy": 941.5897216796875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          0.0314100980758667,
+          0,
+          64.76016235351562
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_00e44d5aa7c81a18bd1af996d6c24507",
+            "path": "frames_105_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_830ff200cf049c5a54070b342e916f05",
+            "path": "frames_105_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_c136d3fb67bc4ea588e850a6b0d82384",
+          "path": "frames_105_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              1.0410816669464111,
+              11.718181610107422,
+              -13.6692533493042
+            ],
+            "quaternion": [
+              0.005528564156984588,
+              0.9976002750168835,
+              -0.06609640412024634,
+              0.01985929573206565
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.33740234375,
+            "fy": 939.33740234375,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          0.6437187194824219,
+          0,
+          61.79867172241211
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_a79c8eb20274ab552b16072838da8bdd",
+            "path": "frames_106_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_4686740fe3b6f43d252e319c11464b17",
+            "path": "frames_106_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_cda3197a5d114cdab69f92a08fafce48",
+          "path": "frames_106_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              1.1436045169830322,
+              11.417455673217773,
+              -14.04003620147705
+            ],
+            "quaternion": [
+              0.005465700921533469,
+              0.9979015807876134,
+              -0.06141254462320909,
+              0.019775250641167176
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.6484375,
+            "fy": 940.6485595703125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          0.7386772632598877,
+          0,
+          60.897098541259766
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_5c869d3444093b6306d52371e16d7d2b",
+            "path": "frames_107_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_550a6106b8392710eb939656845914f5",
+            "path": "frames_107_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_b5c47da081dc43ac933675952a04828e",
+          "path": "frames_107_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              1.2895961999893188,
+              11.178436279296875,
+              -14.784810066223145
+            ],
+            "quaternion": [
+              0.00538182634694682,
+              0.997923117645419,
+              -0.061110894880337475,
+              0.01964550179921146
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.0560913085938,
+            "fy": 939.0559692382812,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          1.3496752977371216,
+          0,
+          62.80312728881836
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_ef3698d746727ab2342572f5d93362ee",
+            "path": "frames_108_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_27575f47a6540b69907345256b780874",
+            "path": "frames_108_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_cbc6386798a74b069eb201127095b430",
+          "path": "frames_108_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              1.4875959157943726,
+              11.0811767578125,
+              -15.551618576049805
+            ],
+            "quaternion": [
+              0.005636748379650017,
+              0.997860366222024,
+              -0.06099121703269749,
+              0.022868931672097838
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.2719116210938,
+            "fy": 939.27197265625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          2.452803611755371,
+          0,
+          64.60669708251953
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_e8eb698742629d9675c1bca755474cee",
+            "path": "frames_109_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_fd32601e554ac3c38656c1fc34c821d8",
+            "path": "frames_109_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_5a13ae0dc0b5456990dcb4dfc7a9001b",
+          "path": "frames_109_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              1.7771363258361816,
+              10.98300838470459,
+              -16.30818748474121
+            ],
+            "quaternion": [
+              0.005912330808709035,
+              0.9976617302950331,
+              -0.061441346785414915,
+              0.029344116178945882
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 935.5682983398438,
+            "fy": 935.5682983398438,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          3.4898829460144043,
+          0,
+          72.84187316894531
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_52e8528410cfd340b0805776e14158a5",
+            "path": "frames_110_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_2ab239f0ce8547f1ac8bfe191f7c7be8",
+            "path": "frames_110_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_b5d24a678d43467ca93a77cae01b13b9",
+          "path": "frames_110_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              2.1623849868774414,
+              10.870549201965332,
+              -17.316680908203125
+            ],
+            "quaternion": [
+              0.006528566852842786,
+              0.9974623589939274,
+              -0.06131011643919138,
+              0.03559901441515046
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.283203125,
+            "fy": 939.2833251953125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          1.7596020698547363,
+          0,
+          73.09442138671875
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_16d2dc895ba47bf29ae1dc99895b0d6c",
+            "path": "frames_111_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_321670632ae99b0d862fedf72befd46e",
+            "path": "frames_111_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_4ecf6c95ae1b4b62bb7c244021ea1325",
+          "path": "frames_111_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              3.3136866092681885,
+              10.661396980285645,
+              -18.76605796813965
+            ],
+            "quaternion": [
+              0.007645927621075545,
+              0.9968056789791492,
+              -0.061056477472911784,
+              0.05091252011372376
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 937.260498046875,
+            "fy": 937.2604370117188,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -11.99976921081543,
+          0,
+          69.41178131103516
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_56adc5a6bc2f9eab74a6d031db1d6537",
+            "path": "frames_112_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_910b45d4f1a2ecb2f2d9d2fc899f8cd3",
+            "path": "frames_112_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_daad3039586e406bae70808bd5b135ee",
+          "path": "frames_112_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              6.927823066711426,
+              10.217592239379883,
+              -20.733158111572266
+            ],
+            "quaternion": [
+              0.011434794420927596,
+              0.9931041813992041,
+              -0.045470386935079286,
+              0.10745126465492107
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 937.4931640625,
+            "fy": 937.4932861328125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -12.678685188293457,
+          0,
+          37.64945602416992
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_f2f2a6afcbb24162c51c6519f24cdd3c",
+            "path": "frames_113_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_51318a79a1bedf32ce826009b66cf933",
+            "path": "frames_113_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_402388aee34f4175b5dd2783e20a8016",
+          "path": "frames_113_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              6.927892208099365,
+              10.21764850616455,
+              -20.733125686645508
+            ],
+            "quaternion": [
+              0.011434064732835883,
+              0.9931041583774757,
+              -0.04546907203885972,
+              0.10745211149612534
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 937.4931640625,
+            "fy": 937.4932861328125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -12.176567077636719,
+          0,
+          33.344749450683594
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_d02edd8e2c8ede964dfebee00291cabc",
+            "path": "frames_114_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_ed181232f518f0d1a7ac493dc238961f",
+            "path": "frames_114_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_04cab2c7e99d416dbe36116e279d1677",
+          "path": "frames_114_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              6.928104400634766,
+              10.21755599975586,
+              -20.73365020751953
+            ],
+            "quaternion": [
+              0.011433443508528013,
+              0.9931040248528621,
+              -0.04546941308726883,
+              0.10745326734949674
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 937.4931640625,
+            "fy": 937.4932861328125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -13.168281555175781,
+          0,
+          33.52968215942383
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_8ec5e204b0f83bafb674b71bd0ab5577",
+            "path": "frames_115_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_6b94ff9d8e7b1fe6606f356067d58436",
+            "path": "frames_115_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_0e91037d022f445ea19b55831d6ccfbd",
+          "path": "frames_115_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              7.33271598815918,
+              10.185860633850098,
+              -21.030988693237305
+            ],
+            "quaternion": [
+              0.011972810748772225,
+              0.9923716008859459,
+              -0.04357216810371023,
+              0.11470276249760115
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 942.1611328125,
+            "fy": 942.1611938476562,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -12.192262649536133,
+          0,
+          32.54481506347656
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_5fc16fadab3e91b35ce1c36559bd9df3",
+            "path": "frames_116_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_849a6009be5d1db6e9b3502fb03eb1e4",
+            "path": "frames_116_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_952271c861a540b796f9002758a34564",
+          "path": "frames_116_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              8.918760299682617,
+              10.01608657836914,
+              -21.322269439697266
+            ],
+            "quaternion": [
+              0.013901041621244746,
+              0.9878017807473813,
+              -0.036796960147088505,
+              0.15066647509675207
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.4818725585938,
+            "fy": 939.4818725585938,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -13.212434768676758,
+          0,
+          34.116737365722656
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_620c813ab51dd42c4a5d3cad86cae7d1",
+            "path": "frames_117_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_a8e335a5362325948742482dd9137f6d",
+            "path": "frames_117_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_1db898e482e54ab6b82ea34e329f1ca5",
+          "path": "frames_117_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              10.054741859436035,
+              9.895816802978516,
+              -21.608993530273438
+            ],
+            "quaternion": [
+              0.014631584760582466,
+              0.9841139735836486,
+              -0.03293181104165754,
+              0.17384216849289583
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.7843627929688,
+            "fy": 940.7843017578125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -9.436436653137207,
+          0,
+          25.454715728759766
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_291ad835ab844272fadac712c73ada7d",
+            "path": "frames_118_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_bf290a784ebf0d49f6f2dfa07569e3f7",
+            "path": "frames_118_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_9c635ae903ca45609745ab73b617d5f3",
+          "path": "frames_118_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              11.350726127624512,
+              9.77998161315918,
+              -21.760406494140625
+            ],
+            "quaternion": [
+              0.015442032769100254,
+              0.9809052673749762,
+              -0.03074876616558117,
+              0.1914181638175411
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 942.1311645507812,
+            "fy": 942.1309814453125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -8.513131141662598,
+          0,
+          23.981704711914062
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_7b665b75d1e4931016354155a5ffb9a1",
+            "path": "frames_119_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_c44e7247a110ee506017a3166e8b74a9",
+            "path": "frames_119_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_17e04cc31098440884375b49d7139357",
+          "path": "frames_119_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              12.574222564697266,
+              9.670018196105957,
+              -21.645187377929688
+            ],
+            "quaternion": [
+              0.01769486731140086,
+              0.9759162448750013,
+              -0.029847252342492026,
+              0.21536832679740117
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.8860473632812,
+            "fy": 939.885986328125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -13.354562759399414,
+          0,
+          31.533710479736328
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_7c7d4c5f4f2da895361e78f8348607b9",
+            "path": "frames_120_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_5932ffa3cde56ce18b54d2f598ee5544",
+            "path": "frames_120_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_af330e826a654b1fac32f8929f9258fb",
+          "path": "frames_120_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              14.980484962463379,
+              9.4117431640625,
+              -21.791318893432617
+            ],
+            "quaternion": [
+              0.02088653261764601,
+              0.9661602817881932,
+              -0.028878589095513912,
+              0.25546837327157296
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 943.0908203125,
+            "fy": 943.0907592773438,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -14.113381385803223,
+          0,
+          28.12711524963379
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_8e97c539528f0ba5c14fe203a0e02e8d",
+            "path": "frames_121_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_b73411b694d989bb00f411aa50aa9817",
+            "path": "frames_121_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_4a9fe6e51247419f88ab93b07c93f708",
+          "path": "frames_121_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              15.071955680847168,
+              9.400014877319336,
+              -21.778366088867188
+            ],
+            "quaternion": [
+              0.0210050370051801,
+              0.9657240222599205,
+              -0.028883006709314096,
+              0.2571024565692855
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 942.5986328125,
+            "fy": 942.5986938476562,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -12.833785057067871,
+          0,
+          26.019535064697266
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_5b46324baa746741fd509cf83ab36007",
+            "path": "frames_122_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_da66d1304d42fba245830ed57f16fe38",
+            "path": "frames_122_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_9d4ea408744a485da68bffe4dd0819f8",
+          "path": "frames_122_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              17.01386070251465,
+              9.1902437210083,
+              -21.68391227722168
+            ],
+            "quaternion": [
+              0.022359483698393898,
+              0.955564049723197,
+              -0.028954077667684246,
+              0.2925048063737729
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 941.539306640625,
+            "fy": 941.5393676757812,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -13.665782928466797,
+          0,
+          22.99540901184082
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_96c12cbf2957faed14c8a9a655e518d9",
+            "path": "frames_123_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_75333b787c95e6eaba356776bd571521",
+            "path": "frames_123_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_cde94c6e7b1e4e8e8b606d4480d05168",
+          "path": "frames_123_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.096141815185547,
+              8.961094856262207,
+              -21.43393325805664
+            ],
+            "quaternion": [
+              0.023409787834443276,
+              0.9450842139369897,
+              -0.02861605486544944,
+              0.3247290128777935
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 941.5653686523438,
+            "fy": 941.5654296875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -14.337646484375,
+          0,
+          20.80124282836914
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_e00a4ef8ec395c78e6d0282101b8a5e9",
+            "path": "frames_124_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_384eea21b0e0ff2d143223c1263d8466",
+            "path": "frames_124_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_5406fbc142e446799c63db8f892208b0",
+          "path": "frames_124_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              19.235397338867188,
+              8.95141315460205,
+              -21.446279525756836
+            ],
+            "quaternion": [
+              0.023429992501653292,
+              0.9445471526097639,
+              -0.02850406035023651,
+              0.3262962311944623
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 942.545166015625,
+            "fy": 942.545166015625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -13.660903930664062,
+          0,
+          20.071577072143555
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_48342be320beb2d02ae3daf91134f485",
+            "path": "frames_125_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_1827a62e09c69c929e0df49e84edaa38",
+            "path": "frames_125_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_bf4e366809514a68b301fb632e5a9528",
+          "path": "frames_125_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              21.1547794342041,
+              8.718656539916992,
+              -20.98710060119629
+            ],
+            "quaternion": [
+              0.0252696386699238,
+              0.934383066083805,
+              -0.027599523321732267,
+              0.35429930495237016
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.6932983398438,
+            "fy": 940.693359375,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -14.355379104614258,
+          0,
+          18.20622444152832
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_7fb115e2783223d35deb0da147f727b4",
+            "path": "frames_126_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_77ea0172fdee1458e83874261fc4579b",
+            "path": "frames_126_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_c4eea8b911584fc6af024ed44879264f",
+          "path": "frames_126_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              23.140487670898438,
+              8.478181838989258,
+              -20.397842407226562
+            ],
+            "quaternion": [
+              0.027043154457758747,
+              0.9228355210151732,
+              -0.027188502931901195,
+              0.3832806468606909
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.7138061523438,
+            "fy": 939.7138061523438,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -15.185417175292969,
+          0,
+          16.74737548828125
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_7bf24fd556216664c6097c9f69c9a81a",
+            "path": "frames_127_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_9f1947cdb9d62e853ba9637d50a2afc6",
+            "path": "frames_127_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_76f494792f494cf294bfa318085bc536",
+          "path": "frames_127_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              23.3265438079834,
+              8.466752052307129,
+              -20.39234161376953
+            ],
+            "quaternion": [
+              0.027122205089073363,
+              0.9219750972357733,
+              -0.02703718766857105,
+              0.3853508745950463
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 941.1160278320312,
+            "fy": 941.1159057617188,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -19.515531539916992,
+          0,
+          13.734722137451172
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_95cd82c2ca2397596ba4389574b42718",
+            "path": "frames_128_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_765c6294fbb32065d6eefc570e4f42d0",
+            "path": "frames_128_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_5a55a7f3a7d14222bbff6e5beac338d6",
+          "path": "frames_128_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              25.209009170532227,
+              8.230005264282227,
+              -19.503746032714844
+            ],
+            "quaternion": [
+              0.028180013892634092,
+              0.9102040906675373,
+              -0.025533775674037466,
+              0.4124105071999505
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.579345703125,
+            "fy": 940.5794677734375,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -14.976892471313477,
+          0,
+          10.455202102661133
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_33d8df5f4a507e2154069a24767c0156",
+            "path": "frames_129_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_ba166c7ae97da777ed6ead7f9ebf547f",
+            "path": "frames_129_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_ba6961428927402d8d82904af23543f9",
+          "path": "frames_129_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              25.821941375732422,
+              8.161555290222168,
+              -19.186901092529297
+            ],
+            "quaternion": [
+              0.02856400955540815,
+              0.9061245196909447,
+              -0.025307915167102436,
+              0.4212860804760446
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 940.1458129882812,
+            "fy": 940.1458129882812,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -12.160480499267578,
+          0,
+          8.040550231933594
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_349c7c530cae3dbd8653ba17c1390a78",
+            "path": "frames_130_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_29e629308f61ad07cb297be4f6e71990",
+            "path": "frames_130_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_952c83700d0a4e56a38017638d918e48",
+          "path": "frames_130_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              27.24182891845703,
+              8.003743171691895,
+              -18.42684555053711
+            ],
+            "quaternion": [
+              0.029025614881639506,
+              0.8974176293465312,
+              -0.0257282137678398,
+              0.4394737435104752
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 939.8034057617188,
+            "fy": 939.803466796875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -9.011917114257812,
+          0,
+          6.695478439331055
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_5ae429230b2abe9bae23971a94176af4",
+            "path": "frames_131_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_eaf056d8aed19e376ac4a107ea376ab3",
+            "path": "frames_131_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_67da7d8fb43e4e959d16daba45971094",
+          "path": "frames_131_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              28.290496826171875,
+              7.8727312088012695,
+              -17.723302841186523
+            ],
+            "quaternion": [
+              0.030171035258790474,
+              0.8900048646720026,
+              -0.02591816617367632,
+              0.4542128335414766
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 937.7186889648438,
+            "fy": 937.71875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -6.321002960205078,
+          0,
+          6.238193511962891
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_b0df0d581869f176cf9e88977f764abe",
+            "path": "frames_132_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_9e8d272e59695dcbb5f1e5a3dce25299",
+            "path": "frames_132_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_e63082c4b3bd4be39a454635a6eee8d1",
+          "path": "frames_132_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              29.74013900756836,
+              7.686678886413574,
+              -16.72484016418457
+            ],
+            "quaternion": [
+              0.03173057309014027,
+              0.8785088790476833,
+              -0.025692755226688766,
+              0.4759781533795598
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 936.1569213867188,
+            "fy": 936.1569213867188,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -3.8343505859375,
+          0,
+          5.234500885009766
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_0d18967cffed51233586d07654c9a9dd",
+            "path": "frames_133_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_1a641776ac1f754f157b287627201f62",
+            "path": "frames_133_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_6cb1171ef99e4e4caab33c1e04856a4b",
+          "path": "frames_133_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              30.929866790771484,
+              7.54965353012085,
+              -15.899055480957031
+            ],
+            "quaternion": [
+              0.03280974641848619,
+              0.8688877074448359,
+              -0.02558652607113502,
+              0.4932575413258505
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 935.6032104492188,
+            "fy": 935.6031494140625,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -2.7740211486816406,
+          0,
+          5.223737716674805
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_d75a21f8262fa3134d030cccb3e32980",
+            "path": "frames_134_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_2e0e92b51876a9fdf2da62f0d0dae1b0",
+            "path": "frames_134_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_db7ded03f9c443fcb6fe65b9f6718e48",
+          "path": "frames_134_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              32.083866119384766,
+              7.404368877410889,
+              -15.001465797424316
+            ],
+            "quaternion": [
+              0.03317728987451163,
+              0.8583243976155057,
+              -0.02520984195348955,
+              0.5114127098178551
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 936.547607421875,
+            "fy": 936.5476684570312,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -2.3731040954589844,
+          0,
+          5.518322944641113
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_c87ebd0de734f4efba595ca5b7c30d08",
+            "path": "frames_135_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_d652ee6bc72d5a8b6face6f15de6f150",
+            "path": "frames_135_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_f14646657c9444b69ca1e4452e3b0b0c",
+          "path": "frames_135_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              33.27472686767578,
+              7.253973960876465,
+              -14.045890808105469
+            ],
+            "quaternion": [
+              0.033246657711886174,
+              0.8465174556647042,
+              -0.024668582740195497,
+              0.530748827630862
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 938.8451538085938,
+            "fy": 938.8452758789062,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -19.52035903930664,
+          0,
+          7.804098129272461
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_35547baaf8f8b6e284d2c8979563e0a4",
+            "path": "frames_136_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_ecf1052178bbd7bd194bb38396d02474",
+            "path": "frames_136_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_d5b0c3ab40b046c69ce9ab64c9978c76",
+          "path": "frames_136_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              34.252445220947266,
+              7.075655460357666,
+              -12.891185760498047
+            ],
+            "quaternion": [
+              0.03422681334126566,
+              0.8327506650661338,
+              -0.024496625575467362,
+              0.5520459857800156
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 936.556396484375,
+            "fy": 936.5562133789062,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -17.251976013183594,
+          0,
+          5.091222763061523
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_89d910290480fbb462d0c5313f3a8f63",
+            "path": "frames_137_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_36e9bd607ccb03789ef5af6f022acfb2",
+            "path": "frames_137_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_ba176da4793646f3bbeef0b75e5bd9ed",
+          "path": "frames_137_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              35.36518859863281,
+              6.877470970153809,
+              -11.502326011657715
+            ],
+            "quaternion": [
+              0.035611526639781066,
+              0.8157628969238532,
+              -0.02428246947506811,
+              0.5767781868699433
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 936.2621459960938,
+            "fy": 936.26220703125,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -15.129737854003906,
+          0,
+          2.9180660247802734
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_2043078a69b1d74711757be8742af41d",
+            "path": "frames_138_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_46911c4523bdc01595b3702605a56cb7",
+            "path": "frames_138_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_332cf04608074d8193b01b58c39723a9",
+          "path": "frames_138_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              36.20842742919922,
+              6.742197513580322,
+              -10.303495407104492
+            ],
+            "quaternion": [
+              0.03673831197050456,
+              0.8019865243490136,
+              -0.024455894207677138,
+              0.5957095101092895
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 936.832763671875,
+            "fy": 936.8328857421875,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -12.052867889404297,
+          0,
+          2.812045097351074
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_88244dfbc86a6acb75fe42fb2805336f",
+            "path": "frames_139_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_e56ffdd6b3ea50d89cdb5e592a9d680b",
+            "path": "frames_139_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_1f3af123cac54176a01dfd1e2d778bd3",
+          "path": "frames_139_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              36.87162780761719,
+              6.547878265380859,
+              -8.610182762145996
+            ],
+            "quaternion": [
+              0.03774554593228413,
+              0.7851708718563802,
+              -0.0249316995314931,
+              0.6176247939558748
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 934.051025390625,
+            "fy": 934.0509643554688,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -11.080451965332031,
+          0,
+          3.745767593383789
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_c6888caa7e6c85465e9b267224f42281",
+            "path": "frames_140_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_14ab94b10b5f710b8995bd80d3a776c0",
+            "path": "frames_140_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_a2ea75c793e14810ab9609a722399492",
+          "path": "frames_140_image.jpg"
+        },
+        "maskAsset": null
+      },
+      {
+        "camera": {
+          "extrinsics": {
+            "coordinateSystem": "rub",
+            "position": [
+              37.207969665527344,
+              6.458620071411133,
+              -7.756283760070801
+            ],
+            "quaternion": [
+              0.038076310949792136,
+              0.7788800555473001,
+              -0.0246751414606577,
+              0.6255295284868541
+            ]
+          },
+          "intrinsics": {
+            "cx": 640,
+            "cy": 360,
+            "fx": 935.7727661132812,
+            "fy": 935.7727661132812,
+            "height": 720,
+            "width": 1280
+          }
+        },
+        "centroidWorld": [
+          -11.225761413574219,
+          0,
+          3.692523956298828
+        ],
+        "depth": {
+          "confidenceAsset": {
+            "assetId": "asset_fa1f3e746892dbfaf114712cc8950efd",
+            "path": "frames_141_depth_confidence.png"
+          },
+          "depthAsset": {
+            "assetId": "asset_7c0e5ccf66e6938fff644a11d56539c0",
+            "path": "frames_141_depth.exr"
+          }
+        },
+        "imageAsset": {
+          "assetId": "asset_2c7bebb56ec1457ca4c985f79e3314d6",
+          "path": "frames_141_image.jpg"
+        },
+        "maskAsset": null
+      }
+    ],
+    "poseRefinementAccepted": true
+  },
+  "name": "accounts/acct_8b3b4aa40ac04a2ab9e9dec9386fdbd4/projects/proj_8e2175b1bcd24ba7a983a10b380a3bc9/operations/3a1dd7093c5e44a7a46265ee65f1f6da"
+}

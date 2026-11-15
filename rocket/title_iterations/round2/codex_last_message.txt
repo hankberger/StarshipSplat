@@ -1,0 +1,14 @@
+Saved all eight PNGs. Full mock-ups are **1538 × 784**; crops are **336 × 332**. Pixels outside the header area are unchanged.
+
+CSS values below approximate the generated typography at native screenshot size. Tracking means `letter-spacing`.
+
+| Mock-up | Direction and layout | Closest fonts and CSS |
+|---|---|---|
+| **1** — [Full](A:/Coding/Projects/atlastest/rocket/title_iterations/round2/mockup_1.png) · [Crop](A:/Coding/Projects/atlastest/rocket/title_iterations/round2/crop_1.png) | **Aerospace grotesk:** compact title and right-aligned date on one baseline. | Title: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk), `22px`, `600`, `-0.04em`, title case. Date: IBM Plex Mono, `12px`, `500`, `0.02em`. Colour: `#202729`. |
+| **2** — [Full](A:/Coding/Projects/atlastest/rocket/title_iterations/round2/mockup_2.png) · [Crop](A:/Coding/Projects/atlastest/rocket/title_iterations/round2/crop_2.png) | **Editorial cinema:** expressive serif above a hairline and right-aligned date. | Title: [Fraunces](https://fonts.google.com/specimen/Fraunces), `34px`, `500`, `-0.025em`, title case. Date: [Inter](https://fonts.google.com/specimen/Inter), `12px`, `500`, `0.10em`. Colour: `#292724`; rule: `1px`. |
+| **3** — [Full](A:/Coding/Projects/atlastest/rocket/title_iterations/round2/mockup_3.png) · [Crop](A:/Coding/Projects/atlastest/rocket/title_iterations/round2/crop_3.png) | **Condensed film title:** tall uppercase lettering with the date beneath, aligned left. | Title: [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed), `42px`, `600`, `0.01em`, `uppercase`. Date: IBM Plex Mono, `14px`, `500`, `0.08em`. Colour: `#1d2930`. |
+| **4** — [Full](A:/Coding/Projects/atlastest/rocket/title_iterations/round2/mockup_4.png) · [Crop](A:/Coding/Projects/atlastest/rocket/title_iterations/round2/crop_4.png) | **Quiet archive:** small date above a full-width rule, with an understated monospaced title below. | Both: [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono). Title: `24px`, `400`, `-0.04em`, title case. Date: `12px`, `600`, `0.04em`. Colour: `#29302f`; rule: `1px`. |
+
+Shared CSS: `width:312px; background:transparent; line-height:1.1`. Dates retain the exact numeric format.
+
+Created with built-in image editing using the four directions above as prompts, then composited onto the original screenshot.

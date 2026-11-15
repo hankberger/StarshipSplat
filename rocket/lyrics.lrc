@@ -1,0 +1,64 @@
+[ti:Your song title]
+[ar:Your artist]
+[offset:0]
+
+# Timed lyrics for the video panel. Replace the placeholder lines below with your own.
+#
+# Format: [minutes:seconds.hundredths] text of the line
+#   - Times are positions in the video itself (the player currently starts at 00:25).
+#   - A line stays on screen until the next line's time. An empty line clears the display.
+#   - Put several time tags in front of one line to repeat it: [01:10.00][02:40.00] Chorus line
+#   - [offset:N] shifts every line by N milliseconds (positive = lyrics appear earlier).
+#   - Lines starting with # are ignored.
+
+[ti:Baby Come Back]
+[ar:Player]
+
+[00:39.57] Spending all my nights,
+[00:41.68] all my money
+[00:42.78] going out on the town
+[00:46.33] Doing anything
+[00:47.34] just to get you off of my mind
+[00:52.17] But when the morning comes,
+[00:54.06] I'm right back where I started again
+[00:58.15] And tryin' to forget you
+[00:59.89] is just a waste of time
+[01:04.28] Baby, come back,
+[01:07.49] any kind of fool could see
+[01:10.59] There was something
+[01:12.68] in everything about you
+[01:16.70] Baby, come back,
+[01:19.87] you can blame it all on me
+[01:23.08] I was wrong
+[01:25.04] and I just can't live without you
+[01:30.42] All day long,
+[01:37.69] I'm wearing a mask of false bravado
+[01:42.60] Trying to keep up a smile that hides a tear
+[01:48.29] But as the sun goes down,
+[01:50.00] I get that empty feeling again
+[01:55.46] How I wish to God
+[01:56.94] that you were here
+[02:00.49] Baby, come back, oh, baby,
+[02:03.60] any kind of fool could see
+[02:06.79] There was something
+[02:09.02] in everything about you
+[02:13.02] Baby, come back,
+[02:16.13] you can blame it all on me
+[02:19.42] I was wrong
+[02:21.07] and I just can't live without you, oh
+[02:29.27] Now that I put it all together, oh-oh
+[02:35.76] Give me the chance
+[02:37.40] to make you see
+[02:42.09] Have you used up
+[02:44.06] all the love in your heart?
+[02:48.41] Nothing left for me?
+[02:50.93] Ain't there nothing left for me?
+[02:52.19] Baby, come back, oh, darling,
+[02:57.96] any kind of fool could see
+[03:01.09] There was something
+[03:03.20] in everything about you
+[03:07.32] Baby, come back, listen, baby,
+[03:10.34] you can blame it all on me
+[03:13.56] I was wrong and I
+[03:15.61] just can't live without you
+[03:20.11] I was wrong and I just can't live

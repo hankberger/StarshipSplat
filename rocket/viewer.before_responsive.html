@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Rocket tower splats</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ html,body{margin:0;height:100%;background:#0d1014;color:#e8eaed;font:14px system-ui,sans-serif;overflow:hidden}
+ #bar{position:fixed;top:12px;left:12px;display:flex;gap:8px;align-items:center;background:#1b2027cc;padding:8px 12px;border-radius:8px}
+ select,button{font:inherit;background:#2a313b;color:inherit;border:1px solid #3c4552;border-radius:6px;padding:4px 8px}
+ #bar{z-index:10} #hint{position:fixed;bottom:12px;left:12px;opacity:.7;z-index:10}
+ canvas{position:fixed;inset:0;z-index:2;pointer-events:none}
+ #input{position:fixed;inset:0;z-index:0}
+ #css3d{position:fixed;inset:0;pointer-events:none;z-index:1}
+ #css3dFront{position:fixed;inset:0;pointer-events:none;z-index:3}
+ .panel{width:480px;height:578px;display:flex;flex-direction:column}
+ .panel .head{height:118px;flex:none;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:10px;padding:0 0 10px;box-sizing:border-box;color:#1d2930}
+ .panel .title{font:600 66px/0.95 "Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.01em;text-transform:uppercase}
+ .panel .date,.panel .eyebrow,.panel .aside{font:500 21px/1 "IBM Plex Mono",ui-monospace,Consolas,monospace;letter-spacing:.08em;text-transform:uppercase}
+ .panel .eyebrow{font-size:17px;letter-spacing:.14em;opacity:.75}
+ .panel .meta{display:flex;justify-content:space-between;align-items:baseline;width:100%}
+ .panel .aside{opacity:.75}
+ .panel .lyrics{height:100px;flex:none;box-sizing:border-box;padding:14px 0 0;display:flex;flex-direction:column;gap:8px;overflow:visible}
+ .panel .lyrics .now{position:relative;height:38px;flex:none;font:400 30px/1.1 "Barlow Condensed","Arial Narrow",sans-serif;letter-spacing:.03em;color:#000000b8}
+ .panel .lyrics .line{position:absolute;left:50%;top:0;white-space:nowrap;transform-origin:center center;transform:translateX(-50%) scale(var(--fit,1))}
+ .panel .lyrics .line .w{display:inline-block;opacity:0;transform:translateY(.22em);filter:blur(3px);
+   transition:opacity .24s cubic-bezier(.2,.7,.2,1),transform .34s cubic-bezier(.16,1,.3,1),filter .24s ease-out;transition-delay:var(--d,0s)}
+ .panel .lyrics .line.in .w{opacity:1;transform:translateY(0);filter:blur(0)}
+ .panel .lyrics .line.out{opacity:0;transform:translate(-50%,-4px) scale(var(--fit,1));filter:blur(3px);transition:opacity .13s ease-in,transform .13s ease-in,filter .13s ease-in}
+ .panel .lyrics .next{text-align:center;font:500 15px/1.5 "IBM Plex Mono",ui-monospace,Consolas,monospace;letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#00000073;transition:opacity .35s ease}
+ .panel iframe{width:100%;height:360px;flex:none;border:0;pointer-events:auto;border-radius:12px;box-shadow:0 10px 40px #0008;background:#000}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<script type="importmap">{"imports":{
+ "three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+ "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/",
+ "@sparkjsdev/spark":"https://cdn.jsdelivr.net/npm/@sparkjsdev/spark@2.4.0/dist/spark.module.js"}}</script>
+</head><body>
+<div id="bar"><label for="pick">Scene</label><select id="pick"></select><input type="file" id="file" accept=".spz" hidden><button id="reset">Reset view</button><button id="panelToggle">Hide panel</button><button id="lyricTimerBtn" title="Temporary tool: tap out lyric timings">Time lyrics</button><span id="status"></span></div>
+<div id="hint">Drag to orbit · right-drag to pan · scroll to zoom</div>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { SparkRenderer, SplatMesh } from "@sparkjsdev/spark";
+import { CSS3DRenderer, CSS3DObject } from "three/addons/renderers/CSS3DRenderer.js";
+import { EXRLoader } from "three/addons/loaders/EXRLoader.js";
+const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: true, stencil: true });
+renderer.setSize(innerWidth, innerHeight); document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene(); scene.background = new THREE.Color("rgb(152,167,176)");
+// Sky: an equirectangular HDRI as the backdrop. The flat colour above stays as the fallback if it fails to load.
+// An HDRI sits infinitely far away, so through a long lens only a small patch of it fills the frame and the clouds look huge and soft.
+// "scale" shrinks the sky's features: the HDRI is repeated that many times around the horizon (a whole number keeps it seamless)
+// and squeezed vertically by its own factor. "horizonDeg" is how far below the scene's horizon the HDRI's own horizon sits.
+const SKY = { url: "hdri/scythian_tombs_puresky_1k.exr", intensity: 0.26, rotationDeg: 110, scale: [6, 4], horizonDeg: 6 };   // scale: [around the horizon, vertically]
+let skyDome = null;
+new EXRLoader().load(SKY.url, (tex) => {
+  tex.wrapS = THREE.RepeatWrapping; tex.wrapT = THREE.ClampToEdgeWrapping;
+  tex.repeat.set(SKY.scale[0], SKY.scale[1]); tex.offset.set(0, 0.5 - 0.5 * SKY.scale[1] + SKY.scale[1] * SKY.horizonDeg / 180);
+  const geo = new THREE.SphereGeometry(2000, 64, 32); geo.scale(-1, 1, 1);          // viewed from inside
+  const mat = new THREE.MeshBasicMaterial({ map: tex, depthTest: false, depthWrite: false, fog: false, toneMapped: false });
+  // Keep the sky's contrast as it is (a plain exposure scale) and only round off the very brightest highlights so they don't clip to white.
+  mat.onBeforeCompile = (shader) => { shader.fragmentShader = shader.fragmentShader.replace("#include <tonemapping_fragment>",
+    "vec3 skyC = " + SKY.intensity.toFixed(3) + " * gl_FragColor.rgb; vec3 skyOver = max(skyC - 0.8, 0.0); gl_FragColor.rgb = min(skyC, 0.8) + skyOver / (1.0 + skyOver / 0.2);"); };
+  skyDome = new THREE.Mesh(geo, mat); skyDome.renderOrder = -1000; skyDome.frustumCulled = false;
+  skyDome.rotation.y = THREE.MathUtils.degToRad(SKY.rotationDeg);
+  skyDome.userData.backdrop = true; scene.add(skyDome); window.__v && (window.__v.skyDome = skyDome);
+}, undefined, (err) => console.warn("Sky HDRI failed to load", err));
+// Ground apron: a large flat disc just under the splats, in the terrain's average colour, dissolving into the sky with distance.
+// It fades to fully transparent well before the horizon, so there is no horizon line: the sky simply carries on behind it.
+// The reconstructed ground only reaches about 50 units from the tower; without this you see sky beneath and beyond its edge.
+const APRON = { y: -0.6, radius: 600, solidTo: 55, goneBy: 170, ground: [96, 93, 86], far: [150, 153, 152] };   // distances in scene units
+{
+  const c = document.createElement("canvas"); c.width = c.height = 2048;
+  const g = c.getContext("2d"), grad = g.createRadialGradient(1024, 1024, 0, 1024, 1024, 1024);
+  const stop = (dist, rgb, alpha) => grad.addColorStop(Math.min(1, dist / APRON.radius), `rgba(${rgb[0]},${rgb[1]},${rgb[2]},${alpha})`);
+  const mix = (t) => APRON.ground.map((v, i) => Math.round(v + (APRON.far[i] - v) * t));
+  stop(0, APRON.ground, 1); stop(APRON.solidTo, APRON.ground, 1);
+  for (const t of [0.15, 0.3, 0.45, 0.6, 0.75, 0.9]) stop(APRON.solidTo + (APRON.goneBy - APRON.solidTo) * t, mix(t), Math.pow(1 - t, 1.6));   // lighter and thinner with distance
+  stop(APRON.goneBy, APRON.far, 0); stop(APRON.radius, APRON.far, 0);
+  g.fillStyle = grad; g.fillRect(0, 0, 2048, 2048);
+  const tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace;
+  const apron = new THREE.Mesh(new THREE.CircleGeometry(APRON.radius, 96), new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false, toneMapped: false, fog: false }));
+  apron.rotation.x = -Math.PI / 2; apron.position.y = APRON.y; apron.renderOrder = -500;
+  apron.userData.backdrop = true; scene.add(apron);
+}
+const LENS_MM = 85;   // focal length, as on a 35mm camera
+const camera = new THREE.PerspectiveCamera(40, innerWidth / innerHeight, 0.1, 5000); camera.setFocalLength(LENS_MM);
+const spark = new SparkRenderer({ renderer }); scene.add(spark);
+// The 3D canvas no longer takes the mouse (so clicks can reach the video beneath it); camera gestures land on this layer at the bottom.
+const inputEl = document.createElement("div"); inputEl.id = "input"; document.body.appendChild(inputEl);
+const controls = new OrbitControls(camera, inputEl); controls.enablePan = true; /* the overlay is anchored to the ship itself (see "anchor"), not to the orbit centre, so panning leaves it in place */ window.__v = { camera, controls };
+// How the camera feels and how the shot is composed.
+const FEEL = {
+  damping: 0.07,            // inertia: lower = longer glide after you let go
+  rotateSpeed: 0.45,        // drag sensitivity (1 is the library default; lower suits a long lens)
+  zoomSpeed: 0.6,
+  panSpeed: 0.6,
+  panRange: 30, panMinY: 2, panMaxY: 24,   // how far the orbit centre may be panned away from the ship (sideways), and its height limits
+  minDistance: 28, maxDistance: 240,   // how close and how far the camera may go
+  maxElevationDeg: 60,      // highest angle above the horizon
+  shiftX: 0.07,             // starting sideways shift of the picture; it then follows the framing of ship + panel automatically
+  autoOrbitDegPerSec: 1.0,  // slow drift when nobody is touching the camera
+  idleSeconds: 6,           // how long to wait before the drift starts
+  moveSeconds: 1.8,         // eased camera move for "Reset view"
+  introSeconds: 2.6,        // opening camera move when a scene opens
+};
+controls.enableDamping = true; controls.dampingFactor = FEEL.damping;
+controls.rotateSpeed = FEEL.rotateSpeed; controls.zoomSpeed = FEEL.zoomSpeed; controls.panSpeed = FEEL.panSpeed;
+controls.minDistance = FEEL.minDistance; controls.maxDistance = FEEL.maxDistance;
+controls.minPolarAngle = THREE.MathUtils.degToRad(90 - FEEL.maxElevationDeg);
+controls.autoRotateSpeed = -FEEL.autoOrbitDegPerSec / 6;
+const applyViewShift = () => { camera.setViewOffset(innerWidth, innerHeight, FEEL.shiftX * innerWidth, 0, innerWidth, innerHeight); camera.setFocalLength(LENS_MM); };
+applyViewShift();
+let interacting = false, lastInteraction = performance.now();
+controls.addEventListener("start", () => { interacting = true; controls.autoRotate = false; });
+controls.addEventListener("end", () => { interacting = false; lastInteraction = performance.now(); });
+// Eased camera moves: travel around the orbit point rather than cutting straight across.
+let move = null; const sph = new THREE.Spherical(), tmpV = new THREE.Vector3();
+function flyTo(pos, target, seconds) {
+  const toTarget = new THREE.Vector3(...target);
+  const from = new THREE.Spherical().setFromVector3(tmpV.copy(camera.position).sub(controls.target));
+  const to = new THREE.Spherical().setFromVector3(tmpV.set(...pos).sub(toTarget));
+  let dTheta = to.theta - from.theta; dTheta = Math.atan2(Math.sin(dTheta), Math.cos(dTheta));   // the short way round
+  move = { t: 0, seconds, from, to, dTheta, fromTarget: controls.target.clone(), toTarget };
+  controls.enabled = false; controls.autoRotate = false;
+}
+function updateMove(dt) {
+  if (!move) return;
+  move.t = Math.min(1, move.t + dt / move.seconds);
+  let e, eTheta;
+  if (move.thenOrbit) {
+    // Opening move: already in motion when the scene appears, slowing down, and arriving at exactly the idle drift's
+    // speed instead of stopping, so the drift takes over without a seam.
+    e = 1 - Math.pow(1 - move.t, 3);
+    const drift = THREE.MathUtils.degToRad(FEEL.autoOrbitDegPerSec) * move.seconds / Math.max(Math.abs(move.dTheta), 1e-6);
+    const k = Math.min(1, drift);
+    eTheta = (1 - k) * e + k * move.t;
+  } else {
+    e = eTheta = move.t < 0.5 ? 4 * move.t ** 3 : 1 - Math.pow(-2 * move.t + 2, 3) / 2;          // ease in and out
+  }
+  sph.radius = THREE.MathUtils.lerp(move.from.radius, move.to.radius, e);
+  sph.phi = THREE.MathUtils.lerp(move.from.phi, move.to.phi, e);
+  sph.theta = move.from.theta + move.dTheta * eTheta;
+  controls.target.lerpVectors(move.fromTarget, move.toTarget, e);
+  camera.position.setFromSpherical(sph).add(controls.target);
+  if (move.t >= 1) { lastInteraction = move.thenOrbit ? -Infinity : performance.now(); move = null; controls.enabled = true; }   // after the opening move, drift straight away
+}
+// Opening shot: start a little wider and round to one side, at the home view's height, then sweep into it.
+function intro() {
+  const t = new THREE.Vector3(...view.target), s0 = new THREE.Spherical().setFromVector3(new THREE.Vector3(...view.cam).sub(t));
+  s0.radius = Math.min(FEEL.maxDistance, s0.radius * 1.2); s0.theta -= 0.55;   /* start "behind" the home view so the move travels the same way round as the idle drift */ /* same height as the home view: rising higher showed the edge of the reconstructed ground */
+  controls.target.copy(t); camera.position.setFromSpherical(s0).add(t); controls.update();
+  flyTo(view.cam, view.target, FEEL.introSeconds); move.thenOrbit = true;
+}
+let view = { cam: [140, 5, -12], target: [-5.34, 9.0, 1.2] };
+const anchor = new THREE.Vector3();   // the ship: where the overlay lives, whatever the camera is doing
+const home = () => { anchor.set(...view.target); camera.position.set(...view.cam); controls.target.set(...view.target); controls.update(); };
+home(); document.getElementById("reset").onclick = () => flyTo(view.cam, view.target, FEEL.moveSeconds);
+const files = [
+  { label: "New clips, soft-edged base, extra cleanup", url: "splats_r2/cleaned_disc_carved.spz", cam: [57, 8, 51], target: [2.21, 13.8, -0.42], tower: [0.0, 1.0], groundNormal: [0.0076, 1, 0.0304], pivot: [2.42, 0.02, -0.14] },
+  { label: "New clips, cleaned, soft-edged base", url: "splats_r2/cleaned_disc_soft.spz", cam: [57, 8, 51], target: [2.21, 13.8, -0.42], tower: [0.0, 1.0], groundNormal: [0.0076, 1, 0.0304], pivot: [2.42, 0.02, -0.14] },
+  { label: "New clips, cleaned, circular base, sky colour removed", url: "splats_r2/cleaned_disc_nosky.spz", cam: [57, 8, 51], target: [2.21, 13.8, -0.42], tower: [0.0, 1.0], groundNormal: [0.0076, 1, 0.0304], pivot: [2.42, 0.02, -0.14] },
+  { label: "New clips, cleaned, circular base", url: "splats_r2/cleaned_disc.spz", cam: [57, 8, 51], target: [2.21, 13.8, -0.42], tower: [0.0, 1.0], groundNormal: [0.0076, 1, 0.0304], pivot: [2.42, 0.02, -0.14] },
+  { label: "New clips, cleaned up", url: "splats_r2/cleaned.spz", cam: [57, 8, 51], target: [2.21, 13.8, -0.42], tower: [0.0, 1.0], groundNormal: [0.0076, 1, 0.0304], pivot: [2.42, 0.02, -0.14] },
+  { label: "New clips (142 real frames)", url: "splats_r2/refinedSplats_2000000.spz", cam: [57, 8, 51], target: [2.21, 13.8, -0.42], tower: [0.0, 1.0], groundNormal: [0.0076, 1, 0.0304], pivot: [2.42, 0.02, -0.14] },
+  { label: "Improved (cleaned depth, focused on tower)", url: "splats_v2/refinedSplats_2000000.spz" },
+  { label: "360° (real + generated views)", url: "splats_360/refinedSplats_2000000.spz" },
+  { label: "Real frames only", url: "splats_real/refinedSplats_2000000.spz" },
+];
+const pick = document.getElementById("pick"), status = document.getElementById("status"), fileInput = document.getElementById("file");
+let mesh = null;
+// The reconstruction came out tilted by about 1.8 degrees. Rotate the splats so the measured ground normal points straight up,
+// pivoting about the ground point under the ship so the ship stays where it is.
+function levelGround(obj, f) {
+  obj.quaternion.identity(); obj.position.set(0, 0, 0);
+  if (!f || !f.groundNormal) return;
+  const q = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(...f.groundNormal).normalize(), new THREE.Vector3(0, 1, 0));
+  const p = new THREE.Vector3(...f.pivot);
+  obj.quaternion.copy(q); obj.position.copy(p).sub(p.clone().applyQuaternion(q));
+}
+async function show(options, f) {
+  status.textContent = "Loading…";
+  if (mesh) { scene.remove(mesh); mesh.dispose?.(); }
+  mesh = new SplatMesh(options); levelGround(mesh, f); scene.add(mesh);
+  try { await mesh.initialized; status.textContent = ""; } catch (e) { status.textContent = "Failed to load: " + e.message; }
+}
+if (location.protocol === "file:") {
+  // Browsers block pages opened from disk from reading neighbouring files, so ask for the file instead.
+  pick.add(new Option("Choose a .spz file…", "")); pick.disabled = true;
+  fileInput.hidden = false;
+  status.textContent = "Pick an .spz from splats_360 or splats_real, or run open_viewer.bat";
+  fileInput.onchange = async () => { const f = fileInput.files[0]; if (f) show({ fileBytes: new Uint8Array(await f.arrayBuffer()), fileName: f.name }); };
+} else {
+  for (const f of files) pick.add(new Option(f.label, f.url));
+  const go = () => { const f = files[pick.selectedIndex]; if (f.cam) view = { cam: f.cam, target: f.target, tower: f.tower }; else view = { cam: [140, 5, -12], target: [-5.34, 9.0, 1.2] }; home(); intro(); show({ url: f.url }, f); };
+  pick.onchange = go; go();
+}
+// --- Floating web panel: an iframe that faces the camera and eases round to the rocket's right-hand side ---
+const PANEL = { url: new URLSearchParams(location.search).get("panel") || "https://www.youtube.com/embed/NmEyGiaqm7k?si=g5cYmlWV7J7n5Ylv&start=25&fs=0&autoplay=1&playsinline=1&enablejsapi=1",
+                volume: 33,     // starting volume, 0-100
+                gap: 2.6,           // clear space between the ship's centre and the panel's near edge, in scene units
+                towerClear: 2.2,    // when the tower is on the panel's side of the ship, keep the panel this far beyond the tower's centre line
+                lift: -0.4,         // panel centre above (+) or below (-) the ship's centre, in scene units
+                worldHeight: 6,     // the panel is a fixed size in the scene (the ship is about 5.6 tall), so it grows as you zoom in and shrinks as you zoom out...
+                maxScreenHeight: 0.8, maxScreenWidth: 0.5,   // ...but never fills more than this much of the view when you are very close
+                facing: "swivel",   // "swivel": stays upright and only turns left/right to follow you, like a screen on a stand;
+                                    // "camera": always square-on to the camera; "fixed": never turns (uses fixedYawDeg)
+                fixedYawDeg: 45,
+                cssW: 480, cssH: 578,
+                ease: 4 };          // higher = snappier follow
+const css = new CSS3DRenderer(); css.domElement.id = "css3d"; css.setSize(innerWidth, innerHeight); document.body.appendChild(css.domElement);
+const cssFront = new CSS3DRenderer(); cssFront.domElement.id = "css3dFront"; cssFront.setSize(innerWidth, innerHeight);   // (unused now: the title and lyrics are drawn in the 3D scene)
+const panelEl = document.createElement("div"); panelEl.className = "panel";
+const headEl = document.createElement("div"); headEl.className = "head";
+const titleEl = document.createElement("span"); titleEl.className = "title"; titleEl.textContent = "Starship S42";
+const dateEl = document.createElement("span"); dateEl.className = "date"; dateEl.textContent = "Flight 15 · Don’t Panic";
+headEl.append(dateEl, titleEl); panelEl.appendChild(headEl);
+const frame = document.createElement("iframe"); frame.src = PANEL.url; frame.title = "YouTube video player";
+frame.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+frame.referrerPolicy = "strict-origin-when-cross-origin";   // no allowfullscreen: fullscreen is disabled
+ panelEl.appendChild(frame);
+// --- Karaoke lyrics under the video, driven by a timed-lyrics (.lrc) file and the player's clock ---
+const LYRICS = { url: new URLSearchParams(location.search).get("lyrics") || "lyrics.lrc", fitWidth: 480 };
+const lyricsEl = document.createElement("div"); lyricsEl.className = "lyrics";
+const nowEl = document.createElement("div"); nowEl.className = "now";
+const nextEl = document.createElement("div"); nextEl.className = "next";
+lyricsEl.append(nowEl, nextEl); panelEl.appendChild(lyricsEl);
+function parseLrc(text) {
+  let offset = 0; const lines = [];
+  for (const raw of text.split(/\r?\n/)) {
+    const line = raw.trim(); if (!line || line.startsWith("#")) continue;
+    const meta = line.match(/^\[([a-z]+):(.*)\]$/i);
+    if (meta) { if (meta[1].toLowerCase() === "offset") offset = parseFloat(meta[2]) || 0; continue; }
+    const tags = [...line.matchAll(/\[(\d+):(\d+(?:[.:]\d+)?)\]/g)]; if (!tags.length) continue;
+    const words = line.replace(/\[(\d+):(\d+(?:[.:]\d+)?)\]/g, "").trim();
+    for (const t of tags) lines.push({ t: parseInt(t[1], 10) * 60 + parseFloat(t[2].replace(":", ".")), text: words });
+  }
+  for (const l of lines) l.t -= offset / 1000;                 // LRC convention: positive offset shows lyrics earlier
+  return lines.sort((a, b) => a.t - b.t);
+}
+let lyricLines = [], lyricIndex = -2;
+fetch(LYRICS.url).then((r) => (r.ok ? r.text() : "")).then((t) => { lyricLines = parseLrc(t); window.__v.lyrics = lyricLines; lyricsEl.style.display = lyricLines.length ? "" : "none"; }).catch(() => { lyricsEl.style.display = "none"; });
+// The YouTube player reports its position a few times a second; between reports the clock is advanced locally.
+const yt = { time: 0, at: performance.now(), state: -1, rate: 1 };
+frame.addEventListener("load", () => frame.contentWindow?.postMessage(JSON.stringify({ event: "listening", id: 1, channel: "widget" }), "https://www.youtube.com"));
+addEventListener("message", (e) => {
+  if (e.origin !== "https://www.youtube.com") return;
+  let d; try { d = JSON.parse(e.data); } catch { return; }
+  const info = d && d.info; if (!info) return;
+  if (typeof info.playerState === "number") { yt.time = videoTime(); yt.at = performance.now(); yt.state = info.playerState; }
+  if (typeof info.playbackRate === "number") yt.rate = info.playbackRate;
+  if (typeof info.currentTime === "number") { yt.time = info.currentTime; yt.at = performance.now(); }
+});
+function videoTime() { return yt.state === 1 ? yt.time + ((performance.now() - yt.at) / 1000) * yt.rate : yt.time; }
+window.__v.videoTime = videoTime;
+// Hooks for the temporary lyric timing tool (lyric_timer.js).
+Object.assign(window.__v, { lyricsUrl: LYRICS.url, ytCommand: (f, a) => ytCommand(f, a), ytState: () => yt.state,
+  setLyrics: (lines) => { lyricLines = lines; lyricIndex = -2; lyricsEl.style.display = ""; if (!lines.length) showLine(""), showNext(""); } });
+document.getElementById("lyricTimerBtn").onclick = (e) => { const sc = document.createElement("script"); sc.src = "lyric_timer.js?t=" + Date.now(); document.body.appendChild(sc); e.target.blur(); };
+// Text in the scene. The title and the lyrics are painted onto small canvases and shown on rectangles in the 3D scene,
+// on the same plane as the video, so the ship and tower can pass in front of them just as they do the video.
+const TEXT_RES = 3;                                             // canvas pixels per CSS pixel: keeps the type sharp when you zoom in
+function makeTextLayer(w, h) {
+  const c = document.createElement("canvas"); c.width = w * TEXT_RES; c.height = h * TEXT_RES;
+  const ctx = c.getContext("2d"); ctx.scale(TEXT_RES, TEXT_RES);
+  const tex = new THREE.CanvasTexture(c); tex.anisotropy = 8;
+  return { w, h, ctx, tex };
+}
+const titleLayer = makeTextLayer(480, 118), lyricsLayer = makeTextLayer(480, 100);
+const FONT_TITLE = '600 66px "Barlow Condensed", "Arial Narrow", sans-serif', FONT_LABEL = '500 21px "IBM Plex Mono", ui-monospace, Consolas, monospace';
+const FONT_LYRIC = '400 30px "Barlow Condensed", "Arial Narrow", sans-serif', FONT_NEXT = '500 15px "IBM Plex Mono", ui-monospace, Consolas, monospace';
+function drawTitle() {
+  const { ctx, w, h, tex } = titleLayer; ctx.clearRect(0, 0, w, h);
+  ctx.fillStyle = "#1d2930"; ctx.textBaseline = "middle"; ctx.textAlign = "left";
+  ctx.font = FONT_LABEL; ctx.letterSpacing = "1.68px"; ctx.fillText(dateEl.textContent.toUpperCase(), 0, 25);
+  ctx.font = FONT_TITLE; ctx.letterSpacing = "0.66px"; ctx.fillText(titleEl.textContent.toUpperCase(), 0, 79);
+  tex.needsUpdate = true;
+}
+drawTitle();
+Promise.all([FONT_TITLE, FONT_LABEL, FONT_LYRIC, FONT_NEXT].map((f) => document.fonts.load(f))).then(() => { drawTitle(); lyricsDirty = true; }).catch(() => {});
+
+// The old line clears quickly first; then the new line arrives word by word, each word rising a little and sharpening into focus.
+const easeOut = (x) => 1 - Math.pow(1 - Math.min(1, Math.max(0, x)), 3), easeIn = (x) => Math.pow(Math.min(1, Math.max(0, x)), 2);
+const LYRIC_ANIM = { wordGap: 0.02, fade: 0.24, settle: 0.34, rise: 6.6, blur: 3, leave: 0.13, waitAfterLeave: 0.11, nextOut: 0.25, nextIn: 0.35 };
+let activeLines = [], lyricsDirty = true;
+const nextState = { text: "", pending: null, t: 0 };
+const nowSec = () => performance.now() / 1000;
+function showLine(text) {
+  const t = nowSec(); let hadLine = false;
+  for (const l of activeLines) if (l.leftAt === null) { l.leftAt = t; hadLine = true; }
+  if (text) activeLines.push({ words: text.split(" ").filter(Boolean), t0: t + (hadLine ? LYRIC_ANIM.waitAfterLeave : 0), leftAt: null });
+  lyricsDirty = true;
+}
+function showNext(text) {
+  const target = nextState.pending !== null ? nextState.pending : nextState.text;
+  if (target === text) return;
+  if (nextState.pending === null) nextState.t = nowSec();        // start fading the old preview out
+  nextState.pending = text; lyricsDirty = true;
+}
+function drawLyrics() {
+  if (!lyricsDirty) return;
+  const { ctx, w, h, tex } = lyricsLayer, t = nowSec(); let moving = false;
+  ctx.clearRect(0, 0, w, h); ctx.textBaseline = "middle"; ctx.textAlign = "left";
+  // current line (and any line still leaving)
+  ctx.font = FONT_LYRIC; ctx.letterSpacing = "0.9px";
+  activeLines = activeLines.filter((l) => l.leftAt === null || t - l.leftAt < LYRIC_ANIM.leave);
+  const space = ctx.measureText(" ").width;
+  for (const l of activeLines) {
+    const widths = l.words.map((wd) => ctx.measureText(wd).width), total = widths.reduce((a, b) => a + b, 0) + space * (l.words.length - 1);
+    const fit = Math.min(1, w / total), leaving = l.leftAt === null ? 0 : easeIn((t - l.leftAt) / LYRIC_ANIM.leave);
+    if (l.leftAt !== null) moving = true;
+    ctx.save(); ctx.translate(w / 2, 33 - 4 * leaving); ctx.scale(fit, fit);
+    let x = -total / 2;
+    l.words.forEach((wd, i) => {
+      const age = t - l.t0 - i * LYRIC_ANIM.wordGap, a = easeOut(age / LYRIC_ANIM.fade), settle = easeOut(age / LYRIC_ANIM.settle);
+      if (age < LYRIC_ANIM.settle) moving = true;
+      const blur = LYRIC_ANIM.blur * Math.max(1 - a, leaving);
+      if (a > 0.001) {
+        ctx.globalAlpha = 0.72 * a * (1 - leaving); ctx.fillStyle = "#000";
+        ctx.filter = blur > 0.05 ? `blur(${(blur * TEXT_RES).toFixed(2)}px)` : "none";
+        ctx.fillText(wd, x, LYRIC_ANIM.rise * (1 - settle));
+      }
+      x += widths[i] + space;
+    });
+    ctx.restore();
+  }
+  // small preview of the next line, cross-fading when it changes
+  let nextAlpha = 1;
+  if (nextState.pending !== null) {
+    const p = (t - nextState.t) / LYRIC_ANIM.nextOut; moving = true;
+    if (p >= 1) { nextState.text = nextState.pending; nextState.pending = null; nextState.t = t; nextAlpha = 0; } else nextAlpha = 1 - p;
+  } else { const p = (t - nextState.t) / LYRIC_ANIM.nextIn; nextAlpha = Math.min(1, p); if (p < 1) moving = true; }
+  if (nextState.text && nextAlpha > 0.001) {
+    ctx.filter = "none"; ctx.font = FONT_NEXT; ctx.letterSpacing = "0.45px"; ctx.globalAlpha = 0.45 * nextAlpha; ctx.fillStyle = "#000"; ctx.textAlign = "center";
+    const tw = ctx.measureText(nextState.text).width, fit = Math.min(1, w / tw);
+    ctx.save(); ctx.translate(w / 2, 74); ctx.scale(fit, fit); ctx.fillText(nextState.text, 0, 0); ctx.restore();
+  }
+  ctx.globalAlpha = 1; ctx.filter = "none";
+  tex.needsUpdate = true; lyricsDirty = moving;
+}
+function updateLyrics() {
+  if (!lyricLines.length) return;
+  const t = videoTime(); let i = -1;
+  for (let k = 0; k < lyricLines.length && lyricLines[k].t <= t; k++) i = k;
+  if (i === lyricIndex) return;
+  lyricIndex = i;
+  showLine(i >= 0 ? lyricLines[i].text : "");
+  let k = i + 1; while (k < lyricLines.length && !lyricLines[k].text) k++;
+  showNext(i >= 0 && k < lyricLines.length ? lyricLines[k].text : "");   // nothing is previewed before the first line starts
+}
+// Browsers only allow autoplay when muted, so the video starts silent and is unmuted on the first click, drag or key press in the viewer.
+const ytCommand = (func, args = []) => frame.contentWindow?.postMessage(JSON.stringify({ event: "command", func, args }), "https://www.youtube.com");
+// Start with sound at PANEL.volume. Browsers decide whether a page may autoplay with sound; if this one refuses,
+// fall back to muted autoplay and switch the sound on at the first click, drag or key press in the viewer.
+const startWithSound = () => { ytCommand("setVolume", [PANEL.volume]); ytCommand("unMute"); ytCommand("playVideo"); };
+const unmuteOnce = () => { startWithSound(); removeEventListener("pointerdown", unmuteOnce, true); removeEventListener("keydown", unmuteOnce, true); };
+if (PANEL.url.includes("youtube.com/embed")) {
+  frame.addEventListener("load", () => {
+    setTimeout(startWithSound, 600);
+    setTimeout(() => {
+      if (yt.state === 1) return;                               // playing with sound: nothing more to do
+      ytCommand("mute"); ytCommand("playVideo");                // blocked: play silently and wait for the first interaction
+      addEventListener("pointerdown", unmuteOnce, true); addEventListener("keydown", unmuteOnce, true);
+    }, 3000);
+  });
+}
+// The iframe takes the pointer, so YouTube's own controls (pause, volume, seek) work when the cursor is over the video.
+// The panel is split across two layers. The video sits BEHIND the 3D canvas and shows through a hole cut in it, so the
+// tower and ship can pass in front of it. The title and lyrics have no background of their own (the sky shows through them),
+// so they stay in a layer in FRONT of the canvas.
+const panelFrontEl = document.createElement("div"); panelFrontEl.className = "panel";
+const gapTop = document.createElement("div"); gapTop.style.cssText = "height:118px;flex:none";
+const gapMid = document.createElement("div"); gapMid.style.cssText = "height:360px;flex:none";
+panelEl.insertBefore(gapTop, frame); panelFrontEl.append(headEl, gapMid, lyricsEl);
+frame.style.boxShadow = "none";                                   // the shadow would be hidden behind the canvas anyway
+const panel = new CSS3DObject(panelEl), panelFront = new CSS3DObject(panelFrontEl);
+panelEl.style.pointerEvents = panelFrontEl.style.pointerEvents = "none";   // only the video itself takes the mouse; everything else lets camera gestures through
+const backScene = new THREE.Scene(), frontScene = new THREE.Scene(); backScene.add(panel); frontScene.add(panelFront);
+// The hole: an invisible rectangle exactly over the video that erases the canvas there (and marks the stencil).
+const VIDEO = { top: 118, w: 480, h: 360, radius: 12, inset: 1 };  // the video's place inside the panel, in CSS pixels
+const hole = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.ShaderMaterial({
+  uniforms: { uHalf: { value: new THREE.Vector2(VIDEO.w / 2 - VIDEO.inset, VIDEO.h / 2 - VIDEO.inset) }, uRadius: { value: VIDEO.radius } },
+  vertexShader: "varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }",
+  fragmentShader: "uniform vec2 uHalf; uniform float uRadius; varying vec2 vUv;" +
+    "void main() { vec2 p = abs((vUv - 0.5) * 2.0 * uHalf) - (uHalf - vec2(uRadius));" +     // rounded rectangle, to match the video's corners
+    " if (length(max(p, 0.0)) > uRadius) discard; gl_FragColor = vec4(0.0); }",
+  blending: THREE.NoBlending, depthTest: false, depthWrite: false,
+  stencilWrite: true, stencilRef: 1, stencilFunc: THREE.AlwaysStencilFunc, stencilZPass: THREE.ReplaceStencilOp,
+}));
+hole.frustumCulled = false;
+const holeScene = new THREE.Scene(); holeScene.add(hole);
+// Title and lyrics rectangles. They are drawn over the finished scene, mark the stencil wherever they put ink, and the
+// nearer splats are then redrawn over them, exactly as for the video.
+const textMaterial = (layer) => new THREE.ShaderMaterial({
+  uniforms: { map: { value: layer.tex } },
+  vertexShader: "varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }",
+  fragmentShader: "uniform sampler2D map; varying vec2 vUv; void main() { vec4 c = texture2D(map, vUv); if (c.a < 0.01) discard; gl_FragColor = c; }",
+  transparent: true, depthTest: false, depthWrite: false,
+  stencilWrite: true, stencilRef: 1, stencilFunc: THREE.AlwaysStencilFunc, stencilZPass: THREE.ReplaceStencilOp,
+});
+const titlePlane = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), textMaterial(titleLayer));
+const lyricsPlane = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), textMaterial(lyricsLayer));
+titlePlane.frustumCulled = lyricsPlane.frustumCulled = false; titlePlane.renderOrder = lyricsPlane.renderOrder = 1;
+holeScene.add(titlePlane, lyricsPlane);
+// Place a rectangle that covers CSS rows [top, top + height) of the 480 x 578 panel.
+function placeOnPanel(mesh, top, height, sc) {
+  mesh.quaternion.copy(panel.quaternion); mesh.scale.set(PANEL.cssW * sc, height * sc, 1);
+  mesh.position.copy(panel.position).addScaledVector(holeUp, (PANEL.cssH / 2 - (top + height / 2)) * sc);
+  mesh.updateMatrixWorld(true);
+}
+const holeUp = new THREE.Vector3(), holeCorner = new THREE.Vector3(), camFwd = new THREE.Vector3();
+// Draw the frame in three steps: (1) the whole scene; (2) cut the hole over the video; (3) redraw, inside the hole only,
+// just the splats that are nearer to the camera than the panel, so they cover the video the way a real object would.
+function renderWithOcclusion() {
+  renderer.autoClear = true; renderer.render(scene, camera);
+  if (!panel.visible) return;
+  const sc = panel.scale.x;
+  holeUp.set(0, 1, 0).applyQuaternion(panel.quaternion);
+  hole.quaternion.copy(panel.quaternion); hole.scale.set(VIDEO.w * sc, VIDEO.h * sc, 1);
+  hole.position.copy(panel.position).addScaledVector(holeUp, (PANEL.cssH / 2 - (VIDEO.top + VIDEO.h / 2)) * sc);
+  hole.updateMatrixWorld(true);
+  placeOnPanel(titlePlane, 0, titleLayer.h, sc); placeOnPanel(lyricsPlane, VIDEO.top + VIDEO.h, lyricsLayer.h, sc);
+  drawLyrics();
+  renderer.autoClear = false; renderer.render(holeScene, camera);
+  // How far away the video is along the view direction; anything nearer is "in front".
+  camera.getWorldDirection(camFwd);
+  const depth = holeCorner.copy(hole.position).sub(camera.position).dot(camFwd);
+  if (depth > camera.near * 2) {
+    const far0 = camera.far, hidden = [];
+    for (const o of scene.children) if (o.userData.backdrop && o.visible) { o.visible = false; hidden.push(o); }
+    const m = spark.material;
+    if (m) { m.stencilWrite = true; m.stencilFunc = THREE.EqualStencilFunc; m.stencilRef = 1; m.stencilWriteMask = 0x00; }
+    const bg = scene.background; scene.background = null;        // a colour background would wipe the canvas again
+    camera.far = depth; camera.updateProjectionMatrix();
+    renderer.render(scene, camera);
+    camera.far = far0; camera.updateProjectionMatrix(); scene.background = bg;
+    if (m) { m.stencilWrite = false; m.stencilWriteMask = 0xff; }
+    for (const o of hidden) o.visible = true;
+  }
+  renderer.autoClear = true;
+}
+const UP = new THREE.Vector3(0, 1, 0), fwd = new THREE.Vector3(), right = new THREE.Vector3(), goal = new THREE.Vector3();
+let panelScaleGoal = 0.016, shiftGoal = FEEL.shiftX;
+function panelGoal() {
+  camera.getWorldDirection(fwd); right.crossVectors(fwd, UP);
+  if (right.lengthSq() < 1e-6) right.set(1, 0, 0);          // looking straight up or down
+  right.normalize();
+  // Size of the view at the ship's distance, in scene units. Working in fractions of it keeps the panel the same size
+  // on screen, and in the same place relative to the ship, however far the camera is.
+  const dist = camera.position.distanceTo(anchor);
+  const viewH = 2 * dist * Math.tan(THREE.MathUtils.degToRad(camera.getEffectiveFOV()) / 2), viewW = viewH * camera.aspect;
+  panelScaleGoal = Math.min(PANEL.worldHeight / PANEL.cssH, PANEL.maxScreenHeight * viewH / PANEL.cssH, PANEL.maxScreenWidth * viewW / PANEL.cssW);
+  // The tower stands about 2.6 units from the ship. When it is on the panel's side, slide the panel out past it instead of through it.
+  let gap = PANEL.gap;
+  if (view.tower) gap = Math.max(gap, (view.tower[0] - anchor.x) * right.x + (view.tower[1] - anchor.z) * right.z + PANEL.towerClear);
+  const offset = gap + panelScaleGoal * PANEL.cssW / 2;                           // keep the panel's near edge clear of the ship and tower
+  // Frame the pair: slide the picture so the middle of "ship to far edge of the panel" sits at the centre of the view.
+  // Far out that is a small nudge; close in it moves the ship well to the left so the whole panel stays on screen.
+  shiftGoal = THREE.MathUtils.clamp(0.8 * (offset + panelScaleGoal * PANEL.cssW / 2) / 2 / viewW, 0.03, 0.33);   // 0.8: sit the pair slightly left of centred
+  return goal.copy(anchor).addScaledVector(right, offset).addScaledVector(UP, PANEL.lift);
+}
+// Which way the panel faces. In "swivel" it turns about the vertical axis only, so looking down from above you see it
+// at an angle, the way you would see a real upright screen.
+const facingQ = new THREE.Quaternion();
+function panelFacing() {
+  if (PANEL.facing === "camera") return facingQ.copy(camera.quaternion);
+  let yaw = THREE.MathUtils.degToRad(PANEL.fixedYawDeg);
+  if (PANEL.facing === "swivel") { camera.getWorldDirection(fwd); yaw = Math.atan2(-fwd.x, -fwd.z); }
+  return facingQ.setFromAxisAngle(UP, yaw);
+}
+let panelPlaced = false;
+function updatePanel(dt) {
+  const g = panelGoal();
+  if (!panelPlaced) { panel.position.copy(g); panel.quaternion.copy(panelFacing()); panel.scale.setScalar(panelScaleGoal); panelPlaced = true; return; }
+  const k = 1 - Math.exp(-PANEL.ease * dt);                  // frame-rate independent easing
+  panel.position.lerp(g, k); panel.quaternion.slerp(panelFacing(), k);
+  panel.scale.setScalar(THREE.MathUtils.lerp(panel.scale.x, panelScaleGoal, 1 - Math.exp(-10 * dt)));
+  const sx = THREE.MathUtils.lerp(FEEL.shiftX, shiftGoal, 1 - Math.exp(-6 * dt));
+  if (Math.abs(sx - FEEL.shiftX) > 1e-4) { FEEL.shiftX = sx; applyViewShift(); }
+}
+const panelToggle = document.getElementById("panelToggle");
+panelToggle.onclick = () => { panel.visible = !panel.visible; panelEl.style.display = panelFrontEl.style.display = panel.visible ? "" : "none"; panelToggle.textContent = panel.visible ? "Hide panel" : "Show panel"; };
+window.__v.panel = panel; window.__v.PANEL = PANEL;
+addEventListener("resize", () => { camera.aspect = innerWidth / innerHeight; applyViewShift(); renderer.setSize(innerWidth, innerHeight); css.setSize(innerWidth, innerHeight); cssFront.setSize(innerWidth, innerHeight); });
+const clock = new THREE.Clock();
+// Keep the camera above the ground: the lowest orbit angle allowed depends on how far out the camera is.
+const GROUND = { y: 0, clearance: 2.5 };
+function limitToGround() {
+  const dist = camera.position.distanceTo(controls.target);
+  const c = THREE.MathUtils.clamp((GROUND.y + GROUND.clearance - controls.target.y) / Math.max(dist, 1e-3), -1, 1);
+  controls.maxPolarAngle = Math.acos(c);
+}
+// Keep the orbit centre within reach of the ship. The camera is moved by the same amount so nothing jumps.
+const panFix = new THREE.Vector3();
+function limitPan() {
+  const t = controls.target; panFix.copy(t);
+  const dx = t.x - anchor.x, dz = t.z - anchor.z, r = Math.hypot(dx, dz);
+  if (r > FEEL.panRange) { panFix.x = anchor.x + dx * FEEL.panRange / r; panFix.z = anchor.z + dz * FEEL.panRange / r; }
+  panFix.y = THREE.MathUtils.clamp(t.y, FEEL.panMinY, FEEL.panMaxY);
+  if (panFix.distanceToSquared(t) > 1e-10) { camera.position.add(panFix.clone().sub(t)); t.copy(panFix); }
+}
+renderer.setAnimationLoop(() => { const dt = Math.min(clock.getDelta(), 0.1); updateMove(dt); limitToGround();
+  controls.autoRotate = move ? !!move.thenOrbit : (!interacting && performance.now() - lastInteraction > FEEL.idleSeconds * 1000);   // drift when idle, and already up to speed by the end of the opening move
+  controls.update(dt); limitPan(); updatePanel(dt); updateLyrics(); if (skyDome) skyDome.position.copy(camera.position); panelFront.position.copy(panel.position); panelFront.quaternion.copy(panel.quaternion); panelFront.scale.copy(panel.scale);
+  renderWithOcclusion(); css.render(backScene, camera); });
+</script></body></html>

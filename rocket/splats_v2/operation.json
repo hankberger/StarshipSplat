@@ -1,0 +1,26 @@
+{
+  "id": "7b491e0d380b4ef6a3ce8b9e19eed51a",
+  "ownerId": "acct_8b3b4aa40ac04a2ab9e9dec9386fdbd4",
+  "metadata": {
+    "@type": "type.worldlabs.ai/wlt.marble.v2.posedImages2Splats.metadata",
+    "state": "SUCCEEDED",
+    "status": "SUCCEEDED",
+    "surface": "DEVELOPER_API",
+    "task": "posedImages2Splats",
+    "taskVersion": "v1"
+  },
+  "done": true,
+  "error": null,
+  "expiresAtSecs": null,
+  "createdAtSecs": 1794700201,
+  "response": {
+    "draftSplat": null,
+    "refinedSplats": {
+      "2000000": {
+        "assetId": "asset_5df059ce1692132812d4ab7ed46911c8",
+        "path": "refinedSplats_2000000.spz"
+      }
+    }
+  },
+  "name": "accounts/acct_8b3b4aa40ac04a2ab9e9dec9386fdbd4/projects/proj_8e2175b1bcd24ba7a983a10b380a3bc9/operations/7b491e0d380b4ef6a3ce8b9e19eed51a"
+}

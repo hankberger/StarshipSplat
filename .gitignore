@@ -15,3 +15,10 @@ rocket/req/*_op.json
 rocket/req/pose_done.json
 rocket/req/*.err
 rocket/req/path_cams_raw.json
+
+# Second round (rocket2 clips): scratch sheets, caches and raw API responses
+r2/probe/
+r2/carve_frac.npy
+r2/req/*_op.json
+r2/req/pose_done.json
+r2/req/*.err

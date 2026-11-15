@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Viewer size test</title>
+<style>html,body{margin:0;background:#333;font:13px system-ui;color:#eee} #f{border:0;display:block;background:#000} #info{padding:4px 8px}</style></head>
+<body><div id="info"></div><iframe id="f" allow="autoplay; encrypted-media"></iframe>
+<script>
+// Loads the viewer in a frame of an exact size, to check the layout at phone, tablet and desktop dimensions.
+const q = new URLSearchParams(location.search), w = +q.get("w") || 390, h = +q.get("h") || 844;
+const f = document.getElementById("f"); f.style.width = w + "px"; f.style.height = h + "px";
+document.getElementById("info").textContent = w + " x " + h;
+f.src = "viewer.html?qa=" + Date.now();
+</script></body></html>
